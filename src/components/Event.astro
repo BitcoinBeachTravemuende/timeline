@@ -1,0 +1,10 @@
+---
+
+import { type BBTEvent } from '../types';
+
+interface Props {
+	event: BBTEvent
+}
+
+const { event: { block, headline } } = Astro.props;
+---
