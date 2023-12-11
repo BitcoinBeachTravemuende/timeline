@@ -1,9 +1,17 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import { getEntry } from "astro:content";
+import Events from "../../components/Events.astro";
+import Layout from "../../layouts/Layout.astro";
+import type { Lang } from "../../types";
+
+const events = await getEntry("events", "events");
+
+const LANG: Lang = "en";
 ---
 
-<Layout title="Bitcoin Beach Travemünde (Germany) Timeline" lang="en">
-	<main class="container">
-		<h1 class="text-2xl">English</h1>
-	</main>
+<Layout title="Bitcoin Beach Travemünde (Germany) Timeline" lang={LANG}>
+  <main class="container">
+    <h1 class="text-2xl">English</h1>
+    <Events events={events.data.events} lang={LANG} />
+  </main>
 </Layout>

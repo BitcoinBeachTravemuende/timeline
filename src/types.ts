@@ -1,15 +1,36 @@
+import { z } from "astro/zod";
 
-export type BBTEventType = 'meetup' | 'tech-meetup' | 'action' | 'software' | 'misc'
+export const eventType = z.enum([
+  "meetup",
+  "tech-meetup",
+  "action",
+  "software",
+  "misc",
+  "unknown",
+]);
 
-export type Lang = "de" | "en";
+export type EventType = z.infer<typeof eventType>;
 
-export type BBTEvent = {
-  type: BBTEventType;
-  date: Date;
-  block: number;
-  headline: string;
-  description: string;
-  link?: string;
-}
+const lang = z.enum(["de", "en"]);
+export type Lang = z.infer<typeof lang>;
 
-export type BBTEvents = BBTEvent[];
+const event = z.object({
+  type: eventType.default("unknown"),
+  date: z.date(),
+  block: z.number(),
+  headline: z.record(
+    lang,
+    z.string()
+  ),
+  description: z.record(
+    lang,
+    z.string()
+  ),
+  link: z.string().nullable(),
+});
+
+export type Event = z.infer<typeof event>;
+
+export const events = event.array();
+
+export type Events = z.infer<typeof events>;
