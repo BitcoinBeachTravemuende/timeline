@@ -21,4 +21,5 @@ events:
       de: "lorem ipsum dolor sit amet action DE"
       en: "lorem ipsum dolor sit amet action EN"
     link: "http://action.org/"
+
 ---

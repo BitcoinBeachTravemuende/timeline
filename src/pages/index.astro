@@ -1,20 +1,5 @@
 ---
-import Events from '../components/Events.astro';
-import Layout from '../layouts/Layout.astro';
-
-import { getEntry } from 'astro:content';
-import type { Lang } from '../types';
-
-const events = await getEntry('events', 'events');
-
-const { remarkPluginFrontmatter: {events: eee} } = await events.render();
-
-const LANG: Lang = "de"
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Bitcoin Beach Travemünde Zeitleiste" lang={LANG}>
-	<main class="container">
-		<h1 class="text-2xl">Deutsch</h1>
-    <Events events={events.data.events} lang={LANG} />
-	</main>
-</Layout>
+<Layout lang="de" />

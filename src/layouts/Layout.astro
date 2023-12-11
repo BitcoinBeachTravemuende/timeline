@@ -3,14 +3,21 @@ import "../styles/base.css";
 
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Events from "../components/Events.astro";
 import type { Lang } from "../types";
+import { useTranslations } from "../i18n";
+import { getEntry } from "astro:content";
 
 interface Props {
-  title: string;
   lang: Lang;
 }
 
-const { title, lang } = Astro.props;
+const { lang } = Astro.props;
+
+const events = await getEntry('events', 'events');
+
+const t = useTranslations(lang)
+
 ---
 
 <!doctype html>
@@ -21,12 +28,13 @@ const { title, lang } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{t("title")}</title>
   </head>
   <body>
     <Header lang={lang} />
     <main class="container px-6">
-      <slot />
+      <h1 class="text-4xl font-bold text-center my-6">{t("title")}</h1>
+        <Events events={events.data.events} lang={lang} />
     </main>
     <Footer />
   </body>

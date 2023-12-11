@@ -34,3 +34,17 @@ export type Event = z.infer<typeof event>;
 export const events = event.array();
 
 export type Events = z.infer<typeof events>;
+
+export const translationKey = z.enum([
+  "title",
+  "blocktime"
+]);
+
+export type TranslationKey = z.infer<typeof translationKey>;
+
+export const translation = z.record(
+  translationKey,
+  z.string().min(1)
+  );
+
+export type Translation = z.infer<typeof translation>;

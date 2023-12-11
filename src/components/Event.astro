@@ -1,4 +1,5 @@
 ---
+import { useTranslations } from "../i18n";
 import { type Event, type Lang } from "../types";
 
 interface Props {
@@ -8,13 +9,18 @@ interface Props {
 
 const {
   lang,
-  event: { type: eventType, headline, date, description },
+  event: { type: eventType, headline, date, description, block },
 } = Astro.props;
+
+
+const t = useTranslations(lang)
+
 ---
 
 <h1>Event</h1>
 <li>
   <h1>type: {eventType}</h1>
+  <h1>{t("blocktime")}: {block}</h1>
   <h1>headline: {headline[lang]}</h1>
   <h2>date: {date}</h2>
   <h2>date: {date.toLocaleDateString([lang])}</h2>
