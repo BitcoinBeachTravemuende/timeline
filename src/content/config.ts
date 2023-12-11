@@ -1,17 +1,13 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { events, translation } from '../types';
 
-// Defining Collections
+// Defining Collections to provide all data anybody can update easily
+// Note: Data in YAML needs type 'data', data in Markdown needs type 'content'
 // https://docs.astro.build/en/guides/content-collections/#defining-collections
 
-
-// Note: We have just one collection: 'events' with a single *.md file
-// `src/content/events.md` that contains all events.
 const eventsCollection = defineCollection({
-  type: 'content', 
-  schema: z.object({
-    events
-  }),
+  type: 'data',
+  schema: events,
  });
 
  const i18nCollection = defineCollection({

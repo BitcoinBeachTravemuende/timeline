@@ -34,7 +34,7 @@ const t = useTranslations(lang)
     <Header lang={lang} />
     <main class="container px-6">
       <h1 class="text-4xl font-bold text-center my-6">{t("title")}</h1>
-        <Events events={events.data.events} lang={lang} />
+        <Events events={events.data} lang={lang} />
     </main>
     <Footer />
   </body>
