@@ -1,10 +1,22 @@
 ---
-
-import { type BBTEvent } from '../types';
+import { type Event, type Lang } from "../types";
 
 interface Props {
-	event: BBTEvent
+  event: Event;
+  lang: Lang;
 }
 
-const { event: { block, headline } } = Astro.props;
+const {
+  lang,
+  event: { type: eventType, headline, date, description },
+} = Astro.props;
 ---
+
+<h1>Event</h1>
+<li>
+  <h1>type: {eventType}</h1>
+  <h1>headline: {headline[lang]}</h1>
+  <h2>date: {date}</h2>
+  <h2>date: {date.toLocaleDateString([lang])}</h2>
+  <p>description: {description[lang]}</p>
+</li>
