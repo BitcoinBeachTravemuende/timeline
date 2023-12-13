@@ -6,3 +6,10 @@
 html {
   font-family: system-ui, sans-serif;
 }
+
+@layer components {
+
+  .ease {
+    @apply transition duration-300 ease-in-out;
+  }
+}

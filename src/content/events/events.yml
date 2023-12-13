@@ -1,7 +1,7 @@
 
 - type: "meetup"
-  date: 2023-10-20
-  block: 1234
+  date: 2023-07-01T08:22:00+02:00
+  block: 800195
   headline: 
     de: "lorem ipsum meetup DE"
     en: "lorem ipsum meetup EN"
@@ -9,9 +9,13 @@
     de: "lorem ipsum dolor sit amet meetup DE"
     en: "lorem ipsum dolor sit amet meetup EN"
   link: "http://meetup.org/"
+
+
+
+
 - type: "action"
   date: 2023-07-08T10:22:00+02:00
-  block: 2234
+  block: 800196
   headline: 
     de: "lorem ipsum action DE"
     en: "lorem ipsum action EN"
@@ -19,3 +23,33 @@
     de: "lorem ipsum dolor sit amet action DE"
     en: "lorem ipsum dolor sit amet action EN"
   link: "http://action.org/"
+- type: "cinema"
+  date: 2023-07-08T11:22:00+02:00
+  block: 800197
+  headline: 
+    de: "lorem ipsum Kino DE"
+    en: "lorem ipsum cinema EN"
+  description: 
+    de: "lorem ipsum dolor sit amet kino DE"
+    en: "lorem ipsum dolor sit amet cinema EN"
+  link: "http://action.org/"
+- type: "meetup"
+  date: 2023-07-11T11:22:00+02:00
+  block: 800198
+  headline: 
+    de: "lorem ipsum meetup DE"
+    en: "lorem ipsum meetup EN"
+  description: 
+    de: "lorem ipsum dolor sit amet meetup DE"
+    en: "lorem ipsum dolor sit amet meetup EN"
+  link: "http://meetup.org/"
+- type: "meetup"
+  date: 2023-07-01T19:00:00+02:00
+  block: 800199
+  headline: 
+    de: "1. Meetup"
+    en: "1. Meetup"
+  description: 
+    de: "Das erste Meetup fand in der aja-Lounge im gleichnamigen Hotel direkt am Bitcoin Beach Travemünde statt. Es war ein voller Erfolg!"
+    en: "First Meetup took place at the aja lounge in the hotel with the same name. It was a great success!"
+  link: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup1.png"

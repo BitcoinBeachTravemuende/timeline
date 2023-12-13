@@ -32,10 +32,21 @@ const t = useTranslations(lang)
   </head>
   <body>
     <Header lang={lang} />
-    <main class="container px-6">
+    <main class="container mx-auto px-6">
       <h1 class="text-4xl font-bold text-center my-6">{t("title")}</h1>
         <Events events={events.data} lang={lang} />
     </main>
     <Footer />
   </body>
 </html>
+
+<script>
+  import Alpine from 'alpinejs'
+  import collapse from '@alpinejs/collapse'
+  import intersect from '@alpinejs/intersect'
+ 
+  window.Alpine = Alpine
+  Alpine.plugin(collapse)
+  Alpine.plugin(intersect)
+  Alpine.start()
+</script>

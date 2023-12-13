@@ -2,9 +2,9 @@ import { z } from "astro/zod";
 
 export const eventType = z.enum([
   "meetup",
-  "tech-meetup",
   "action",
   "software",
+  "cinema",
   "misc",
   "unknown",
 ]);
@@ -39,6 +39,11 @@ export const translationKey = z.enum([
   "title",
   "blocktime"
 ]);
+
+// export const translationKey = z.union(
+//   [z.literal("title"),
+//   z.literal("blocktime")]
+// );
 
 export type TranslationKey = z.infer<typeof translationKey>;
 
