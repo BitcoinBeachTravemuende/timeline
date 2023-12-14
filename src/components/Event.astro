@@ -1,6 +1,9 @@
 ---
 import { useTranslations } from "../i18n";
 import type { EventType } from "../types";
+import External from "./icons/External.astro";
+import Arrow from "./icons/Arrow.astro";
+import Close from "./icons/Close.astro";
 import { type Event, type Lang } from "../types";
 import { twJoin, twMerge } from 'tailwind-merge'
 
@@ -48,6 +51,15 @@ const bgColors: ColorsByType = {
   unknown: `bg-unknown`,
 };
 
+const fillColors: ColorsByType = {
+  action: `fill-action`,
+  meetup: `fill-meetup`,
+  software: `fill-software`,
+  cinema:`fill-cinema`,
+  misc: `fill-misc`,
+  unknown: `fill-unknown`,
+};
+
 const borderColors: ColorsByType = {
   action: `border-action`,
   meetup: `border-meetup`,
@@ -86,7 +98,7 @@ const beforeFromColors: ColorsByType = {
   'first:before:top-1/2 last:before:bottom-1/2',
   'group/w')}
   id={block.toString()}
-  x-data="{ shown: false, expanded: false }" 
+  x-data="{ shown: false, expanded: true }" 
   x-intersect.full="shown = true"
   x-intersect:leave="shown = false"
   >
@@ -112,7 +124,6 @@ const beforeFromColors: ColorsByType = {
       "group-even/w:before:border-r-inherit group-even/w:before:left-0 group-even/w:before:-translate-x-5 ",
       "group-odd/w:before:border-l-inherit group-odd/w:before:right-0 group-odd/w:before:translate-x-5",
       "hover:shadow-lg hover:scale-105 ease",
-      // 'overflow-hidden',
       "group/d",
       )}
       :class="{ 'shadow-lg scale-105': expanded }"
@@ -125,16 +136,20 @@ const beforeFromColors: ColorsByType = {
       x-transition:leave-start="opacity-100 scale-100 -translate-x-0"
       x-transition:leave-end="opacity-0 scale-90 -translate-x-1/4"
       
-      @click="expanded = !expanded"
     >
+
+
+    <!-- wrapper for blocktime in background
+      Needs to have a negative z-index 
+    -->
       <div class={twMerge(
-        "absolute inset-0 opacity-0 overflow-hidden", 
+        "absolute inset-0 opacity-0 overflow-hidden -z-20", 
         textColors[eventType]
       )}
       :class="{ 'opacity-0 delay-0 transition-none' : !expanded, 'opacity-10 delay-200' : expanded}"
       >
         <div 
-        class={twMerge("absolute -bottom-6 right-0 text-9xl font-extrabold ease", 
+        class={twMerge("absolute -bottom-6 right-0 text-8xl 2xl:text-9xl font-extrabold ease", 
           textColors[eventType]
           )}
         
@@ -143,14 +158,43 @@ const beforeFromColors: ColorsByType = {
         </div>
       </div>
 
-      <h1 class={twMerge("cursor-pointer text-2xl leading-none uppercase font-semibold", textColors[eventType])}>{headline[lang]}</h1>
+      <div class="w-full relative group/h cursor-pointer"
+      @click="expanded = !expanded"
+      >
+        <h1 
+          class={twMerge(
+            "w-full cursor-pointer text-2xl leading-none uppercase font-semibold", 
+            textColors[eventType],
+            
+            )}
+          
+          >{headline[lang]}
+        </h1>
+        <Arrow class={twMerge(
+          "absolute -right-8 -top-2 w-10 h-10",
+          'group-hover/h:animate-bounce group-hover/h:-top-1 ease',
+          fillColors[eventType]
+          )} 
+          x-show="!expanded"
+          />
+        <Close class={twMerge(
+          "absolute -right-8 -top-2 w-10 h-10",
+          'group-hover/h:rotate-180 ease',
+          fillColors[eventType]
+          )} 
+          x-show="expanded"
+          />
+      </div>
+      
       <div x-show="expanded" x-collapse class="relative"
       >
         <div class="flex items-center text-gray-400 text-sm py-1 ">
           <p class="text-inherit">{date.toLocaleDateString([lang])}</p> 
-          <span class="mx-2 text-inherit"">|</span>
-          <a href=`https://mempool.space/block/${block}` class="underline text-gray-400">{block}</a>
-          <span class="mx-2 text-inherit"">|</span>
+          <span class="mx-2 text-inherit">|</span>
+          <a href=`https://mempool.space/block/${block}` class="group hover:text-gray-700 flex items-center text-gray-400">
+            {block}<External class="group-hover:fill-gray-600 ml-1 fill-gray-400 w-3 h-3" />
+          </a>
+          <span class="mx-2 text-inherit">|</span>
           <p class={twMerge(
             bgColors[eventType],
             'text-white',
@@ -159,7 +203,9 @@ const beforeFromColors: ColorsByType = {
             )}>{t(eventType)}</p> 
         </div>
         <p class="text-base text-gray-500 ">{description[lang]}</p>
-        <a class="underline inline-block mt-4" href={link.url}>{link.label[lang]}</a>
+        <a class="underline group flex items-center mt-4 hover:text-gray-700 mr-1 text-gray-500 font-semibold" href={link.url}>
+          {link.label[lang]}<External class="group-hover:fill-gray-700  ml-1 fill-gray-500" />
+        </a>
       </div>
     </div>
   </div>
