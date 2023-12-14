@@ -10,21 +10,23 @@ const { lang: currentLang } = Astro.props;
 
 ---
 
-<header class="container flex justify-end py-3 px-6">
-  <ul class="flex items-center">
+<header class="w-full flex py-3 px-6">
+  <div class="container mx-auto flex justify-end">
+    <ul class="flex items-center">
     {
       LANGUAGES.map((lang) => (
         <li class="first-of-type:mr-2 uppercase">
           <a
-            class={`text-xl4 ${
-              currentLang === lang ? "font-bold" : "font-normal"
-            }`}
-            href={lang === "de" ? "/" : `/${lang}`}
+          class={`text-xl4 ${
+            currentLang === lang ? "font-bold" : "font-normal"
+          }`}
+          href={lang === "de" ? "/" : `/${lang}`}
           >
-            {lang}
+          {lang}
           </a>
         </li>
-      ))
-    }
-  </ul>
+        ))
+      }
+    </ul>
+  </div>
 </header>

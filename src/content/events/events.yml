@@ -1,21 +1,106 @@
 
-- type: "meetup"
-  date: 2023-10-20
-  block: 1234
-  headline: 
-    de: "lorem ipsum meetup DE"
-    en: "lorem ipsum meetup EN"
-  description: 
-    de: "lorem ipsum dolor sit amet meetup DE"
-    en: "lorem ipsum dolor sit amet meetup EN"
-  link: "http://meetup.org/"
 - type: "action"
-  date: 2023-07-08T10:22:00+02:00
-  block: 2234
+  date: 2023-12-02T22:00:00+02:00
+  block: 819467
   headline: 
-    de: "lorem ipsum action DE"
-    en: "lorem ipsum action EN"
+    de: "Bitcoin Rentier"
+    en: "Bitcoin reindeer"
   description: 
-    de: "lorem ipsum dolor sit amet action DE"
-    en: "lorem ipsum dolor sit amet action EN"
-  link: "http://action.org/"
+    de: "Lief ein Rentier über den Bitcoin Beach ..."
+    en: "What happened when a reindeer walked over the Bitcoin Beach ..."
+  link:
+    label: 
+      de: "Nostr"
+      en: "Nostr"
+    url: "https://primal.net/e/note1llse55ghunq6nswmsxuzgy7avcfs78rzaw88y89w5gw23qr724ss7vw3x5"
+
+- type: "cinema"
+  date: 2023-11-04T17:45:00+02:00
+  block: 815299
+  headline: 
+    de: "1. Open-Air Kino"
+    en: "1. open-air cinema"
+  description: 
+    de: "Film: Who is Bitcoin"
+    en: "Movie: Who is Bitcoin"
+  link:
+    label: 
+      de: "Nostr"
+      en: "Nostr"
+    url: "https://primal.net/e/note1ljpxpde76ydrz7kdtvamt92lyyfe6c88rt03v4hc5tz50u34xz0qaetmtj"
+
+- type: "software"
+  date: 2023-11-08T12:32:00+02:00
+  block: 800195
+  headline: 
+    de: "exify"
+    en: "exify"
+  description: 
+    de: "Unsere erste Open Source Software. Exify ist eine Progressive Web App zum Entfernen von EXIF Daten von Photos."
+    en: "Our first published open-source software. Exify is a Progressive Web App (PWA) to remove EXIF data from images."
+  link:
+    label: 
+      de: "exify"
+      en: "exify"
+    url: "https://bitcoinbeachtravemuende.github.io/exify/"
+
+
+- type: "action"
+  date: 2023-10-20T13:00:00+02:00
+  block: 813028
+  headline: 
+    de: "Bitcoin Sturmflut"
+    en: "Bitcoin strom surge"
+  description: 
+    de: "Die erste Sturmflut in diesem Herbst am Bitcoin Beach Travemünde und wir zeigen Flagge."
+    en: "The first storm flood in autumn at Bitcoin Beach Travemünde and we show one's colours."
+  link:
+    label: 
+      de: "Nostr"
+      en: "Nostr"
+    url: "https://primal.net/e/note1dgdfg7zdtgk0p6z98vj9fe6lfng856s79vnr4zwwwnn9gsade9kqgh80pa"
+
+- type: "misc"
+  date: 2023-08-24T10:33:00+02:00
+  block: 804702
+  headline: 
+    de: "Der Souverän"
+    en: "The Sovereign"
+  description: 
+    de: "Die Marktradikalen widmen dem Souverän einen ganzen Podcast. Wir haben den Text archiviert."
+    en: "The Marktadikalen released a podcast about the sovereign. We have archived the lyrics."
+  link: 
+    label:
+      de: "GitHub"
+      en: "GitHub"
+    url: "https://github.com/BitcoinBeachTravemuende/der-souveraen/"
+
+- type: "meetup"
+  date: 2023-07-29T11:18:00+02:00
+  block: 800787
+  headline: 
+    de: "2. Meetup"
+    en: "2. meetup"
+  description: 
+    de: "Unser zweites Meetup fand während der Travemünder Woche statt."
+    en: "Our second meetup took place during the Travemünder Woche."
+  link: 
+    label:
+      de: "Flyer"
+      en: "flyer"
+    url: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup-tw_updated.png"
+
+- type: "meetup"
+  date: 2023-07-01T19:00:00+02:00
+  block: 796727
+  headline: 
+    de: "1. Meetup"
+    en: "1. Meetup"
+  description: 
+    de: "Das erste Meetup fand in der aja-Lounge im gleichnamigen Hotel direkt am Bitcoin Beach Travemünde statt. Es war ein voller Erfolg!"
+    en: "First Meetup took place at the aja lounge in the hotel with the same name. It was a great success!"
+  link:
+    label:
+      de: "Flyer"
+      en: "flyer"
+    url: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup1.png"

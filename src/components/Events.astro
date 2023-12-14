@@ -11,9 +11,10 @@ interface Props {
 const { lang, events } = Astro.props;
 ---
 
-<h1>Events</h1>
-<ul>
-  {events.map(event => (
-    <Event lang={lang} event={event} />
-  ))}
-</ul>
+<div class="w-full">
+  <div>
+    {events.map(event => (
+      <Event lang={lang} event={event} />
+      ))}
+  </div>
+</div>
