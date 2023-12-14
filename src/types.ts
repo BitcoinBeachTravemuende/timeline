@@ -14,19 +14,23 @@ export type EventType = z.infer<typeof eventType>;
 const lang = z.enum(["de", "en"]);
 export type Lang = z.infer<typeof lang>;
 
+const translations = z.record(
+  lang,
+  z.string()
+)
+
 const event = z.object({
   type: eventType.default("unknown"),
   date: z.date(),
   block: z.number(),
-  headline: z.record(
-    lang,
-    z.string()
-  ),
-  description: z.record(
-    lang,
-    z.string()
-  ),
-  link: z.string().nullable(),
+  headline: translations,
+  description: translations,
+  link: z.object({
+    label: translations,
+    url: z.string().url()
+  })
+  
+  ,
 });
 
 export type Event = z.infer<typeof event>;
@@ -37,13 +41,9 @@ export type Events = z.infer<typeof events>;
 
 export const translationKey = z.enum([
   "title",
-  "blocktime"
+  "blocktime",
+  ...eventType.options
 ]);
-
-// export const translationKey = z.union(
-//   [z.literal("title"),
-//   z.literal("blocktime")]
-// );
 
 export type TranslationKey = z.infer<typeof translationKey>;
 
