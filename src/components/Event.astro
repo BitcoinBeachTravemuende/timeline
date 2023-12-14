@@ -106,7 +106,7 @@ const beforeFromColors: ColorsByType = {
   <div class="w-1/2 px-20 flex items-center relative"
   >
     <!-- detail dotted background -->
-    <div class="absolute inset-0 dot-background bg-[length:7px_7px] bg-[position:-8.5px_-8.5px]"
+    <div class="absolute inset-0 bg-[length:7px_7px] bg-[position:-8.5px_-8.5px] dot-background"
     
     x-show="shown" 
     x-transition:enter="transition ease-out duration-600"
@@ -267,12 +267,11 @@ const beforeFromColors: ColorsByType = {
   .dot-background {
     background-image: radial-gradient(#94a3b8 1px, transparent 0);
     mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1), transparent 60%);
+
+    /* similar using TW does not work ...
+    bg-[radial-gradient(#94a3b8_1px, transparent_0px)] 
+    [mask-image:radial-gradient(ellipse_at_center,#000_60%,transparent_60%)] 
+    */
   }
 
 </style>
-
-
-<!-- bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]
-
-
-bg-[radial-gradient(#94a3b8_1px, transparent_0)] [background-size:16px_16px] -->
