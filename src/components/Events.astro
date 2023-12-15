@@ -1,5 +1,5 @@
 ---
-
+import { useTranslations } from "../i18n";
 import { type Events, type Lang } from '../types';
 import Event from '../components/Event.astro';
 
@@ -9,12 +9,20 @@ interface Props {
 }
 
 const { lang, events } = Astro.props;
+
+const t = useTranslations(lang);
 ---
 
 <div class="w-full">
+  <p class="my-4 py-2 text-gray-400 text-center text-sm md:text-base font-semibold uppercase italic">
+    {t('theBeginning')}
+  </p>
   <div>
     {events.map(event => (
       <Event lang={lang} event={event} />
       ))}
   </div>
+  <p class="my-4 py-2 text-gray-400 text-center text-sm md:text-base font-semibold uppercase italic">
+    {t('theEnd')}
+  </p>
 </div>
