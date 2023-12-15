@@ -90,20 +90,36 @@ const beforeFromColors: ColorsByType = {
 
 ---
 <section class={twMerge(
-  'flex w-full min-h-[16rem] odd:justify-start even:justify-end relative',
-  "before:content-['']",
-  'before:absolute before:left-1/2',
-  'before:-ml-2 before:w-4 before:h-full before:z-10',
-  'before:bg-[radial-gradient(#dedede_1px,transparent_0px)] before:bg-[size:4px_4px]',
-  'first:before:top-1/2 last:before:bottom-1/2',
-  'group/w')}
+    'flex w-full relative',
+    'min-h-[16rem]',
+    'justify-end ',
+    'xl:odd:justify-start xl:even:justify-end ',
+    "before:content-['']",
+    'before:absolute',
+    'before:left-[1em]',
+    'before:w-4',
+    'md:before:left-[2em]',
+    'xl:before:left-1/2',
+    'before:h-full before:z-10',
+    'before:ml-3',
+    'md:before:ml-2',
+    'xl:before:-ml-2',
+    'before:w-4 before:bg-[radial-gradient(#dedede_1px,transparent_0px)] before:bg-[size:4px_4px]',
+    'first:before:top-1/2 last:before:bottom-1/2',
+    'group/w'
+  )}
   id={block.toString()}
-  x-data="{ shown: false, expanded: true }" 
+  x-data="{ shown: false, expanded: false }" 
   x-intersect.full="shown = true"
   x-intersect:leave="shown = false"
   >
   <!-- event wrapper -->
-  <div class="w-1/2 px-20 flex items-center relative"
+  <div class={twMerge(
+    'pl-12 pr-0 xl:px-20 ',
+      "flex items-center relative",
+      "w-[90%]",
+      "xl:w-1/2",
+    )}
   >
     <!-- detail dotted background -->
     <div class="absolute inset-0 bg-[length:7px_7px] bg-[position:-8.5px_-8.5px] dot-background"
@@ -117,29 +133,25 @@ const beforeFromColors: ColorsByType = {
     x-transition:leave-end="opacity-0"
     ></div>
     <!-- event details -->
-    <div class={twMerge("py-4 px-10 relative",
-      'bg-white border-4 rounded-2xl w-full',
-      borderColors[eventType],
-      "before:content-[''], before:absolute before:h-0 before:w-0 before:top-1/2 before:-translate-y-2 before:border-8 before:border-transparent",
-      "group-even/w:before:border-r-inherit group-even/w:before:left-0 group-even/w:before:-translate-x-5 ",
-      "group-odd/w:before:border-l-inherit group-odd/w:before:right-0 group-odd/w:before:translate-x-5",
-      "hover:shadow-lg hover:scale-105 ease",
+    <div class={twMerge("relative",
+      'py-2 px-8 md:px-10 md:py-4',
+      'bg-white rounded-2xl w-full shadow-lg',
+      "hover:scale-105 ease",
       "group/d",
       )}
-      :class="{ 'shadow-lg scale-105': expanded }"
+      :class="{ 'scale-105 !py-4': expanded }"
 
       x-show="shown" 
       x-transition:enter="transition ease-out duration-500"
-      x-transition:enter-start="opacity-0 scale-90 group-odd/w:-translate-x-1/4 group-even/w:translate-x-1/3"
+      x-transition:enter-start="opacity-0 scale-90 translate-x-1/4 xl:group-odd/w:-translate-x-1/4 xl:group-even/w:translate-x-1/4"
       x-transition:enter-end="opacity-100 scale-100 translate-x-0"
-      x-transition:leave="transition ease-out duration-10"
-      x-transition:leave-start="opacity-100 scale-100 -translate-x-0"
-      x-transition:leave-end="opacity-0 scale-90 -translate-x-1/4"
+      x-transition:leave="translate-x-1/4"
       
     >
 
 
-    <!-- wrapper for blocktime in background
+    <!-- 
+      Wrapper for blocktime in background
       Needs to have a negative z-index 
     -->
       <div class={twMerge(
@@ -149,7 +161,7 @@ const beforeFromColors: ColorsByType = {
       :class="{ 'opacity-0 delay-0 transition-none' : !expanded, 'opacity-10 delay-200' : expanded}"
       >
         <div 
-        class={twMerge("absolute -bottom-6 right-0 text-8xl 2xl:text-9xl font-extrabold ease", 
+        class={twMerge("absolute -bottom-3 md:-bottom-6 right-0 text-6xl md:text-8xl 2xl:text-9xl font-extrabold ease", 
           textColors[eventType]
           )}
         
@@ -163,23 +175,27 @@ const beforeFromColors: ColorsByType = {
       >
         <h1 
           class={twMerge(
-            "w-full cursor-pointer text-2xl leading-none uppercase font-semibold", 
+            "w-full cursor-pointer leading-none uppercase font-semibold", 
+            'text-lg md:text-2xl ',
             textColors[eventType],
-            
             )}
           
           >{headline[lang]}
         </h1>
         <Arrow class={twMerge(
-          "absolute -right-8 -top-2 w-10 h-10",
+          "absolute top-1/2 -translate-y-1/2",
+          'w-8 h-8 md:w-10 md:h-10',
+          "-right-7 md:-right-8",
           'group-hover/h:animate-bounce group-hover/h:-top-1 ease',
           fillColors[eventType]
           )} 
           x-show="!expanded"
           />
         <Close class={twMerge(
-          "absolute -right-8 -top-2 w-10 h-10",
-          'group-hover/h:rotate-180 ease',
+          "absolute top-1/2 -translate-y-1/2",
+          'w-8 h-8 md:h-10 ',
+          "-right-7 md:-right-8",
+          'group-hover/h:rotate-90 ease',
           fillColors[eventType]
           )} 
           x-show="expanded"
@@ -188,46 +204,62 @@ const beforeFromColors: ColorsByType = {
       
       <div x-show="expanded" x-collapse class="relative"
       >
-        <div class="flex items-center text-gray-400 text-sm py-1 ">
+        <div class="flex items-center text-gray-400 text-sm pt-1 pb-2">
           <p class="text-inherit">{date.toLocaleDateString([lang])}</p> 
           <span class="mx-2 text-inherit">|</span>
           <a href=`https://mempool.space/block/${block}` class="group hover:text-gray-700 flex items-center text-gray-400">
             {block}<External class="group-hover:fill-gray-600 ml-1 fill-gray-400 w-3 h-3" />
           </a>
-          <span class="mx-2 text-inherit">|</span>
+          <span class="mx-2 text-inherit hidden md:block">|</span>
           <p class={twMerge(
+            'hidden md:block',
             bgColors[eventType],
             'text-white',
             'py-0 px-4 text-xs rounded-full',
             'leading-0'
             )}>{t(eventType)}</p> 
         </div>
-        <p class="text-base text-gray-500 ">{description[lang]}</p>
-        <a class="underline group flex items-center mt-4 hover:text-gray-700 mr-1 text-gray-500 font-semibold" href={link.url}>
-          {link.label[lang]}<External class="group-hover:fill-gray-700  ml-1 fill-gray-500" />
+        <p class="text-sm md:text-base text-gray-500 ">{description[lang]}</p>
+        <a class="text-sm md:text-base underline group flex items-center mt-4 hover:text-gray-700 mr-1 text-gray-500 font-semibold" href={link.url}>
+          {link.label[lang]}<External class="group-hover:fill-gray-700 ml-1 fill-gray-500" />
         </a>
       </div>
     </div>
   </div>
   <!-- block time -->
   <p class={twMerge(
-    'absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-[50%] rounded-full',
+    'absolute top-1/2 -translate-y-[50%] rounded-full',
+    'xl:-translate-x-[50%]',
+    'w-[6em]',
+    'left-[0em]',
+    'md:left-[0em]',
+    'xl:left-1/2',
     'after:bg-gradient-to-b',
     'after:to-transparent',
     afterFromColors[eventType],
     "after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-mx-2 after:h-8 after:translate-y-8 after:w-4 ", 
-    "before:content-[''] before:absolute before:top-0 before:left-1/2 before:-mx-2 before:h-8 before:-translate-y-8 before:w-4 ", 
+    "before:content-[''] before:absolute before:top-0 before:left-1/2 before:-mx-2 before:h-8 before:-translate-y-8 before:w-4", 
     'group-first/w:before:bg-none',
     'before:bg-gradient-to-t',
     'before:to-transparent',
     beforeFromColors[eventType],
     'group-last/w:after:bg-none',
     'z-20 ',
-    'hover:scale-110 hover:shadow-md ease',
+    'text-xs',
+    'md:text-base',
+    'xl:text-lg',
+    'text-center',
+    'hover:scale-110 hover:shadow-md',
+    'cursor-pointer',
+    'ease',
+    textColors[eventType],
+    bgColors[eventType],
     borderColors[eventType],
-    'cursor-pointer ',
-    'ease'
+    'rounded-full px-3 py-1',
+    'border-2 xl:border-4 ',
   )}
+
+    :class="{ 'bg-white shadow-md': expanded, 'text-white border-white': !expanded }"
 
     x-show="shown" 
     x-transition:enter="transition ease-out duration-300"
@@ -240,21 +272,11 @@ const beforeFromColors: ColorsByType = {
     @click="expanded = !expanded"
     >
     <span 
-    x-show="!expanded"
-    class={twMerge(
-      'text-white rounded-full px-3 py-1 text-lg ',
-      bgColors[eventType],
-      
-    )}>{block}</span>
-
-  <span 
-  x-show="expanded"
-  class={twMerge(
-    'bg-white border-4 rounded-full px-3 py-0 text-lg ',
-    textColors[eventType],
-    borderColors[eventType],
-    
-  )}>{block}</span>
+      x-show="!expanded"
+      class='text-inherit'>{block}</span>
+    <span 
+      x-show="expanded"
+      class='text-inherit'>{block}</span>
     
   </p>
 </section>

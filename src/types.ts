@@ -42,7 +42,9 @@ export type Events = z.infer<typeof events>;
 export const translationKey = z.enum([
   "title",
   "blocktime",
-  ...eventType.options
+  ...eventType.options,
+  "theEnd",
+  "theBeginning",
 ]);
 
 export type TranslationKey = z.infer<typeof translationKey>;
