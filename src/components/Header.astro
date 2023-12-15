@@ -15,9 +15,9 @@ const { lang: currentLang } = Astro.props;
     <ul class="flex items-center">
     {
       LANGUAGES.map((lang) => (
-        <li class="first-of-type:mr-2 uppercase">
+        <li class="md:first-of-type:mr-2 uppercase">
           <a
-          class={`text-xl4 ${
+          class={`text-sm md:text-lg p-1 text-gray-400 ${
             currentLang === lang ? "font-bold" : "font-normal"
           }`}
           href={lang === "de" ? "/" : `/${lang}`}
