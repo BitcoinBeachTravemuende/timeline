@@ -2,9 +2,6 @@
 import { useTranslations } from "../i18n";
 import { type Events, type Lang } from '../types';
 import Event from './Event.astro';
-import QuoteStart from './icons/QuoteStart.astro';
-import QuoteEnd from './icons/QuoteEnd.astro';
-import Quote from './Quote.astro';
 
 interface Props {
 	events: Events
@@ -17,11 +14,15 @@ const t = useTranslations(lang);
 ---
 
 <div class="w-full">
-  <Quote class="">{t('theBeginning')} </Quote>
+  <h2 class="text-gray-300 dark:text-gray-500 text-md md:text-xl font-semibold uppercase text-center mb-8 md:mb-12">
+    {t('theBeginning')}
+  </h2>
   <div>
     {events.map(event => (
       <Event lang={lang} event={event} />
       ))}
   </div>
-  <Quote class="">{t('theEnd')} </Quote>
+  <p class="text-gray-300 dark:text-gray-500 text-md md:text-xl font-semibold  uppercase text-center mt-8 md:mt-16">
+    {t('theEnd')}
+  </p>
 </div>

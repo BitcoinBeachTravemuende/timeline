@@ -1,12 +1,29 @@
 ---
+import { useTranslations } from "src/i18n";
+import type { Lang } from "src/types";
+import Github from "./icons/Github.astro";
 
+type Props = {
+  lang: Lang;
+};
+
+const { lang } = Astro.props;
+
+const t = useTranslations(lang);
 ---
 
-<footer class="flex w-full justify-center py-3 px-6">
-  <div class="container mx-auto">
-    <p class="text-center text-muted">
-      © 2023 - <a
-        href="https://meetup.bitcoinbeachtravemuende.de">Bitcoin Beach Travemünde</a>
-    </p>
+<footer class="container mx-auto py-1 md:py-3 px-6 ">
+  <div class="flex justify-center">
+    <a
+      class="mt-28 mb-2 text-gray-300 hover:text-gray-400 dark:text-gray-500 hover:dark:text-gray-400 ease"
+      href="https://github.com/BitcoinBeachTravemuende/timeline"
+      ><Github class="text-inherit w-6 h-6" /></a
+    >
   </div>
+  <p
+    class="text-gray-400 dark:text-gray-500 text-xs px-2 py-2 text-center"
+  >
+    {t("builtWith")}
+    <span class="text-meetup">♥</span> in Travemünde.
+  </p>
 </footer>
