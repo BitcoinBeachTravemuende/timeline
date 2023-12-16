@@ -45,6 +45,7 @@ export const translationKey = z.enum([
   ...eventType.options,
   "theEnd",
   "theBeginning",
+  "builtWith",
 ]);
 
 export type TranslationKey = z.infer<typeof translationKey>;

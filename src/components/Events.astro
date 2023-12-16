@@ -14,7 +14,7 @@ const t = useTranslations(lang);
 ---
 
 <div class="w-full">
-  <h2 class="text-gray-300 text-sm md:text-xl font-semibold uppercase text-center">
+  <h2 class="text-gray-300 dark:text-gray-500 text-md md:text-xl font-semibold uppercase text-center mb-8 md:mb-12">
     {t('theBeginning')}
   </h2>
   <div>
@@ -22,7 +22,7 @@ const t = useTranslations(lang);
       <Event lang={lang} event={event} />
       ))}
   </div>
-  <p class="text-gray-300 text-sm md:text-xl font-semibold  uppercase text-center">
+  <p class="text-gray-300 dark:text-gray-500 text-md md:text-xl font-semibold  uppercase text-center mt-8 md:mt-16">
     {t('theEnd')}
   </p>
 </div>

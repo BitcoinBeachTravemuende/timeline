@@ -11,6 +11,9 @@ dependencies:
   '@alpinejs/intersect':
     specifier: ^3.13.3
     version: 3.13.3
+  '@alpinejs/persist':
+    specifier: ^3.13.3
+    version: 3.13.3
   '@astrojs/check':
     specifier: ^0.3.3
     version: 0.3.3(typescript@5.3.3)
@@ -40,6 +43,9 @@ devDependencies:
   '@types/alpinejs__intersect':
     specifier: ^3.13.3
     version: 3.13.3
+  '@types/alpinejs__persist':
+    specifier: ^3.13.3
+    version: 3.13.3
   tailwind-merge:
     specifier: ^2.1.0
     version: 2.1.0
@@ -57,6 +63,10 @@ packages:
 
   /@alpinejs/intersect@3.13.3:
     resolution: {integrity: sha512-4iwomnp4VXP1OmFfyol0sEgWdMFmX1WBlc8/gxRt6tO8PeeJjnZMdGjJeY6gNeRWS4g6I9aTUycdsyl6OQNv7w==}
+    dev: false
+
+  /@alpinejs/persist@3.13.3:
+    resolution: {integrity: sha512-gXTH8ynVFmmQJf50/bukRvHRnp5fIDYBBfo1ZJMLSzSC6OefM/CAablwlDCV6gx+8ELeis+v5yFvX0MjBEQ7Uw==}
     dev: false
 
   /@ampproject/remapping@2.2.1:
@@ -799,6 +809,12 @@ packages:
 
   /@types/alpinejs__intersect@3.13.3:
     resolution: {integrity: sha512-oUoLvxv2RWGwvIoMGnqxX41iSjhumdo4u/TsAGEN8HI9AG59Ct0dKPbk3aqNafCnugqDiiVtif9nEcIdt6ZPdg==}
+    dependencies:
+      '@types/alpinejs': 3.13.5
+    dev: true
+
+  /@types/alpinejs__persist@3.13.3:
+    resolution: {integrity: sha512-YCU1/WpyeWxLVOx+y50kDYJZXud69hwwXdYIxPFnanxmwJsOZ7LMd6D4BolybmkPWluBwlbJ+6i0t5tH6bSGsg==}
     dependencies:
       '@types/alpinejs': 3.13.5
     dev: true

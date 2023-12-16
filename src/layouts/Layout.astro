@@ -25,26 +25,25 @@ const t = useTranslations(lang);
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang}
+  x-data 
+  x-bind:class="{ 'dark': $store.darkMode.on }"
+  >
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Bitcoin Beach Travemünde - {t("title")}</title>
   </head>
-  <body>
+  <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 ease">
     <Header lang={lang} />
     <main class="container mx-auto px-6">
-      <h1
-        class="text-2xl md:text-4xl text-gray-500 text-center my-6 uppercase font-semibold"
-      >
-        {t("title")}
-      </h1>
+
       <Events events={events} lang={lang} />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>
 
@@ -52,9 +51,27 @@ const t = useTranslations(lang);
   import Alpine from "alpinejs";
   import collapse from "@alpinejs/collapse";
   import intersect from "@alpinejs/intersect";
+  import persist from '@alpinejs/persist'
 
   window.Alpine = Alpine;
   Alpine.plugin(collapse);
   Alpine.plugin(intersect);
+  Alpine.plugin(persist);
+
+  const darkModeStore = {
+    on: false, 
+    init() {
+      this.on = Alpine.$persist(
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      ).as('darkMode') as unknown as boolean; // override type
+    },
+    toggle() {
+      this.on = !this.on
+    }
+  }
+
+  Alpine.store('darkMode', darkModeStore)
+
+
   Alpine.start();
 </script>

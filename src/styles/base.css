@@ -3,17 +3,11 @@
 @tailwind utilities;
 
 
-* {
-
-  color: #4D4D4D; 
-  /* Bitcoin grey */
-}
 html {
   font-family: font-sans, system-ui, sans-serif;
 }
 
 @layer components {
-
   .ease {
     @apply transition duration-300 ease-in-out;
   }
