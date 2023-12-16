@@ -4,7 +4,7 @@ import "../styles/base.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Events from "../components/Events.astro";
-import type { Lang } from "../types";
+import type { Lang, Event as BBTEvent } from "../types";
 import { useTranslations } from "../i18n";
 import { getEntry } from "astro:content";
 
@@ -14,10 +14,14 @@ interface Props {
 
 const { lang } = Astro.props;
 
-const events = await getEntry('events', 'events');
+const entries = await getEntry("events", "events");
 
-const t = useTranslations(lang)
+const data = entries.data;
+const events = data
+  // latest to the top
+  .sort((a: BBTEvent, b: BBTEvent) => b.block - a.block);
 
+const t = useTranslations(lang);
 ---
 
 <!doctype html>
@@ -33,20 +37,24 @@ const t = useTranslations(lang)
   <body>
     <Header lang={lang} />
     <main class="container mx-auto px-6">
-      <h1 class="text-2xl md:text-4xl text-gray-500 text-center my-6 uppercase font-semibold">{t("title")}</h1>
-        <Events events={events.data} lang={lang} />
+      <h1
+        class="text-2xl md:text-4xl text-gray-500 text-center my-6 uppercase font-semibold"
+      >
+        {t("title")}
+      </h1>
+      <Events events={events} lang={lang} />
     </main>
     <Footer />
   </body>
 </html>
 
 <script>
-  import Alpine from 'alpinejs'
-  import collapse from '@alpinejs/collapse'
-  import intersect from '@alpinejs/intersect'
- 
-  window.Alpine = Alpine
-  Alpine.plugin(collapse)
-  Alpine.plugin(intersect)
-  Alpine.start()
+  import Alpine from "alpinejs";
+  import collapse from "@alpinejs/collapse";
+  import intersect from "@alpinejs/intersect";
+
+  window.Alpine = Alpine;
+  Alpine.plugin(collapse);
+  Alpine.plugin(intersect);
+  Alpine.start();
 </script>
