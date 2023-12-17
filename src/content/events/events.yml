@@ -7,7 +7,7 @@
     en: "Advent questions"
   description:
     de: "Während der Advenszeit stellen wir Fragen über Bitcoin und haben einige überraschende Antworten. Alles auf Telegram."
-    en: "During the Advent season we were asking questions about Bitcoin and got some surprising answers at Telegram."
+    en: "During the Advent season we are asking questions about Bitcoin and got some surprising answers at Telegram."
   link:
     label: 
       de: "Ankündigung"
@@ -58,7 +58,7 @@
 
 - type: "techMeetup"
   date: 2023-11-15T18:00:00+02:00
-  block: 817346
+  block: 816902
   headline: 
     de: "Tech-Meetup #3"
     en: "Tech-Meetup #3"
@@ -75,26 +75,13 @@
     de: "Rentier"
     en: "reindeer"
   description: 
-    de: "Was passiert, wenn wir nach dem Meetup einem Rentier begegnen ..."
-    en: "What happened when we meet a reindeer after the meetup ..."
+    de: "Was passiert, wenn wir nach unserem Meetup einem Rentier begegnen ..."
+    en: "What happened when we meet a reindeer after our meetup ..."
   link:
     label: 
       de: "Foto"
       en: "Pic"
     url: "https://primal.net/e/note1llse55ghunq6nswmsxuzgy7avcfs78rzaw88y89w5gw23qr724ss7vw3x5"
-
-- type: "techMeetup"
-  date: 2023-11-14T18:00:00+02:00
-  block: 816752
-  headline: 
-    de: "Tech Meetup #3"
-    en: "Tech Meetup #3"
-  link:
-    label: 
-      de: "Ankündigung mit Flyer"
-      en: "Ankündigung and flyer"
-    url: "https://snort.social/nevent1qqsxrv2c760upv5vmwftc5r0f9za7qddnssj6gl992cyypkcm0p057sppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqp5f8h6u"
-
 
 - type: "misc"
   date: 2023-11-13T15:37:00+02:00
@@ -268,8 +255,8 @@
     de: "Gästebuch"
     en: "Guestbook"
   description: 
-    de: "Wir haben unser eigenes Gästebuch. Es war mit auf der BTC Konferenz 2023 in Insbruck und viele bekannte Gesichter haben sich bereits eingetragen. Aber schaut selbst."
-    en: "We have our own guestbook. Many familiar faces have already signed up. Check it out."
+    de: "Wir haben ein eigenes Gästebuch. Es war bereits auf der BTC Konferenz 2023 in Insbruck und viele bekannte Gesichter haben sich dort eingetragen. Aber schaut selbst."
+    en: "We have our own guestbook. Many familiar faces have already signed up at the BTC Konferenz 2023 in Insbruck. Check it out."
   link:
     label: 
       de: "Details"
@@ -327,8 +314,8 @@
     de: "Tech Meetup #1"
     en: "Tech Meetup #1"
   description: 
-    de: "Wir starten ein weiteres Meetup Format. Nur für Devs."
-    en: "We start another variant of meetups. For devs only."
+    de: "Wir starten mit einem weiteren Meetup Format nur für Devs."
+    en: "We start a new meetup. For devs only."
   link:
     label: 
       de: "Ankündigung mit Flyer"
@@ -358,8 +345,8 @@
     de: "Der Souverän"
     en: "The Sovereign"
   description: 
-    de: "Die Marktradikalen widmen dem Souverän einen ganzen Podcast. Wir haben den Text archiviert."
-    en: "The Marktadikalen released a podcast about the sovereign. We have archived the lyrics."
+    de: "Die Marktradikalen widmen dem Souverän einen ganzen Podcast. Wir haben die wertvollen Worte für jeden zugänglich gemacht."
+    en: "The Marktadikalen released a podcast about the sovereign. We have written down the lyrics accessible for everyone."
   link: 
     label:
       de: "Text"
@@ -432,12 +419,12 @@
     de: "Meetup Webseite"
     en: "Meetup website"
   description: 
-    de: "Die Meetup Webseite ist online. Gesamter Code ist Open-Source."
+    de: "Die Meetups Webseite ist online. Gesamter Code ist Open-Source."
     en: "The meetup website is online. All code is open-source."
   link: 
     label:
-      de: "Meetup Webseite"
-      en: "Meetup website"
+      de: "Link"
+      en: "link"
     url: "https://meetup.bitcoinbeachtravemuende.de/"
 
 - type: "misc"
@@ -463,7 +450,7 @@
     de: "Meetup #1"
     en: "Meetup #1"
   description: 
-    de: "Das erste Meetup! In der aja-Lounge mit wunderbarem Blick auf den Bitcoin Beach Travemünde."
+    de: "Das erste Meetup! In der aja-Lounge und mit wunderbarem Blick auf den Bitcoin Beach Travemünde."
     en: "First Meetup! At aja lounge with a wonderful view to the Bitcoin Beach Travemünde."
   link:
     label:
@@ -540,7 +527,7 @@
     de: "Telegram"
     en: "Telegram"
   description: 
-    de: "Telegram Gruppe ist öffentlich."
+    de: "Telegram Gruppe ist eröffnet."
     en: "Telegram group is public."
   link: 
     label:
