@@ -1,64 +1,355 @@
 
+- type: "misc"
+  date: 2023-12-06T18:12:00+02:00
+  block: 819998
+  headline: 
+    de: "Adventsfragen"
+    en: "Advent questions"
+  description:
+    de: "Während der Advenszeit stellen wir Fragen über Bitcoin und haben einige überraschende Antworten. Alles auf Telegram."
+    en: "During the Advent season we were asking questions about Bitcoin and got some surprising answers at Telegram."
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://snort.social/nevent1qqsvylj4ftzy3u3r0eulvxwe7kxlvf9l7lj0s9zuvkn2678p58ycf4spzamhxue69uhhyetvv9ujuurjd9kkzmpwdejhgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqg8ueq00"
+
+- type: "misc"
+  date: 2023-12-04T17:47:00+02:00
+  block: 819766
+  headline: 
+    de: "Sticker Shop"
+    en: "Sticker shop"
+  description:
+    de: "Wir starten unseren eigenen Sticker Shop mit BTCPay Server."
+    en: "We start our own sticker shop with BTCPay Server."
+  link:
+    label: 
+      de: "Shop"
+      en: "Shop"
+    url: "http://shop.bitcoinbeachtravemuende.de"
+
+- type: "meetup"
+  date: 2023-12-02T19:00:00+02:00
+  block: 819444
+  headline: 
+    de: "Meetup #6"
+    en: "meetup #6"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Announcement and flyer"
+    url: "https://snort.social/nevent1qqsyhwpffxftrm4nr0dfv2tyv37kypzm92d3zhgfjmez32x2hu9tf9qprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqs3uhc3j"
+
+- type: "cinema"
+  date: 2023-12-02T17:00:00+02:00
+  block: 819436
+  headline: 
+    de: "Open-Air Kino #2"
+    en: "open-air cinema #2"
+  description: 
+    de: "Film: Human B"
+    en: "Movie: Human B"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Announcement and flyer"
+    url: "https://snort.social/nevent1qqsyhwpffxftrm4nr0dfv2tyv37kypzm92d3zhgfjmez32x2hu9tf9qprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqs3uhc3j"
+
+- type: "techMeetup"
+  date: 2023-11-15T18:00:00+02:00
+  block: 817346
+  headline: 
+    de: "Tech-Meetup #3"
+    en: "Tech-Meetup #3"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Ankündigung and flyer"
+    url: "https://snort.social/nevent1qqsxrv2c760upv5vmwftc5r0f9za7qddnssj6gl992cyypkcm0p057sprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqspcknl3"
+
 - type: "action"
   date: 2023-12-02T22:00:00+02:00
   block: 819467
   headline: 
-    de: "Bitcoin Rentier"
-    en: "Bitcoin reindeer"
+    de: "Rentier"
+    en: "reindeer"
   description: 
-    de: "Lief ein Rentier über den Bitcoin Beach ..."
-    en: "What happened when a reindeer walked over the Bitcoin Beach ..."
+    de: "Was passiert, wenn wir nach dem Meetup einem Rentier begegnen ..."
+    en: "What happened when we meet a reindeer after the meetup ..."
   link:
     label: 
-      de: "Nostr"
-      en: "Nostr"
+      de: "Foto"
+      en: "Pic"
     url: "https://primal.net/e/note1llse55ghunq6nswmsxuzgy7avcfs78rzaw88y89w5gw23qr724ss7vw3x5"
+
+- type: "techMeetup"
+  date: 2023-11-14T18:00:00+02:00
+  block: 816752
+  headline: 
+    de: "Tech Meetup #3"
+    en: "Tech Meetup #3"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Ankündigung and flyer"
+    url: "https://snort.social/nevent1qqsxrv2c760upv5vmwftc5r0f9za7qddnssj6gl992cyypkcm0p057sppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqp5f8h6u"
+
+
+- type: "misc"
+  date: 2023-11-13T15:37:00+02:00
+  block: 816607
+  headline: 
+    de: "Nostrave 2024"
+    en: "Nostrave 2024"
+  description: 
+    de: "Wir bewerben uns für die Austragung der Nostr Konferenz 2024."
+    en: "We apply for the Nostr conference 2024."
+  link:
+    label: 
+      de: "Details"
+      en: "Details"
+    url: "https://snort.social/nevent1qqsdkpjzhjey07y57f932df7lzhy6gy4j78q846z47q9hx4ak9fpa0qppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpa9sfg6"
+
+
+- type: "meetup"
+  date: 2023-11-04T18:00:00+02:00
+  block: 815301
+  headline: 
+    de: "Meetup #5"
+    en: "meetup #5"
+  description: 
+    de: "Unser fünftes Meetup. Erstmalig mit einem Vortrag ganz im Sinne von #NostrNovember. Es ist übrigens das erste Nostr Meetup Deutschlands."
+    en: "The fifth meetup. For the first time we got a talk - all in the spirit of #NostrNovember. It's the first Nostr meetup in Germany btw."
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Ankündigung and flyer"
+    url: "https://snort.social/nevent1qqstht4lw2zkvcf6mf3pghzlx86fffmnvm8wa6fl0aegkd7ht9je84qppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqp7ajnr9"
 
 - type: "cinema"
   date: 2023-11-04T17:45:00+02:00
   block: 815299
   headline: 
-    de: "1. Open-Air Kino"
-    en: "1. open-air cinema"
+    de: "Open-Air Kino #1"
+    en: "open-air cinema #1"
   description: 
-    de: "Film: Who is Bitcoin"
-    en: "Movie: Who is Bitcoin"
+    de: "Film: Who is Bitcoin."
+    en: "Movie: Who is Bitcoin."
   link:
     label: 
-      de: "Nostr"
-      en: "Nostr"
+      de: "Ankündigung mit Flyer"
+      en: "Ankündigung and flyer"
     url: "https://primal.net/e/note1ljpxpde76ydrz7kdtvamt92lyyfe6c88rt03v4hc5tz50u34xz0qaetmtj"
+
+
+- type: "misc"
+  date: 2023-11-04T17:30:00+02:00
+  block: 815297
+  headline: 
+    de: "Winterbaden #2"
+    en: "Winterbaden #2"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Ankündigung and flyer"
+    url: "https://snort.social/nevent1qqsf9ss26v6rntj0d0tuexgnqt62vkfl0r4frlnsu69khhsfs84l8fgprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqse6c04l"
+
+
+- type: "misc"
+  date: 2023-10-28T15:52:00+02:00
+  block: 814249
+  headline: 
+    de: "#NostrNovember"
+    en: "#NostrNovember"
+  description: 
+    de: "Wir schaffen es in die Liste der 50 #NostrNovember Meetups weltweit."
+    en: "We made it to the list of 50 #NostrNovember meetups worldwide."
+  link:
+    label: 
+      de: "Liste"
+      en: "list"
+    url: "https://snort.social/nevent1qqstkvxdp8w0k49lttmu3wc9flxe256lfqpctjxmal3ryu4csgmzypcprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygzmqxp6kmp7xg4lf4qudvawlxzk9g2ys3ahfx25xunu25u6z9zk8cpsgqqqqqqsqse4ce"
+
+
+- type: "misc"
+  date: 2023-10-26T11:14:00+02:00
+  block: 813896
+  headline: 
+    de: "Einundzwanzig Podcast"
+    en: "Einundzwanzig Podcast"
+  description: 
+    de: 'Kahnsis ist zu Gast beim Einundzwanzig Podcast "Der Weg" und spricht über den Bitcoin Beach Travemünde.'
+    en: "Kahnsis is a guest at the Einundzwanzig Podcast 'Der Weg' and talks about the Bitcoin Beach Travemünde."
+  link:
+    label: 
+      de: "Podcast"
+      en: "Podcast"
+    url: "https://einundzwanzig.space/podcast/der-weg-86-bitcoin-ist-alles-und-nichts/"
+
+- type: "cinema"
+  date: 2023-10-31T20:00:00+02:00
+  block: 814715
+  headline: 
+    de: "Open-Air Kino #0"
+    en: "open-air cinema #0"
+  description: 
+    de: "Testlauf für das Bitcoin Open-Air Kino."
+    en: "Testrun for das Bitcoin open-air cinema."
+  link:
+    label: 
+      de: "Video bei Nostr"
+      en: "Video at Nostr"
+    url: "https://snort.social/nevent1qqszvrgjmkk2jp5v4f8sx4qj9eeele0xsevardrmzr77qfckd4rzeacppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpmcvm96"
 
 - type: "software"
   date: 2023-11-08T12:32:00+02:00
-  block: 800195
+  block: 815851
   headline: 
     de: "exify"
     en: "exify"
   description: 
-    de: "Unsere erste Open Source Software. Exify ist eine Progressive Web App zum Entfernen von EXIF Daten von Photos."
-    en: "Our first published open-source software. Exify is a Progressive Web App (PWA) to remove EXIF data from images."
+    de: "Exify ist eine Progressive Webanwendung (PWA) zum Entfernen von EXIF Daten von Photos. Unsere erste Open Source Software. "
+    en: "Exify is a Progressive Web App (PWA) to remove EXIF data from images. Our first published open-source software. "
   link:
     label: 
       de: "exify"
       en: "exify"
     url: "https://bitcoinbeachtravemuende.github.io/exify/"
 
+- type: "techMeetup"
+  date: 2023-10-25T18:00:00+02:00
+  block: 813792
+  headline: 
+    de: "Tech Meetup #2"
+    en: "Tech Meetup #2"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Announcement and flyer"
+    url: "https://snort.social/nevent1qqsda4xu6w0pquu47d0l2l9lnm33l6fx3wnxwjkr8ah4dtqs4se9paspzamhxue69uhhyetvv9ujumn0wd68ytnzv9hxgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqgz9207f"
+
+
 
 - type: "action"
   date: 2023-10-20T13:00:00+02:00
   block: 813028
   headline: 
-    de: "Bitcoin Sturmflut"
-    en: "Bitcoin strom surge"
+    de: "Sturmflut"
+    en: "storm surge"
   description: 
-    de: "Die erste Sturmflut in diesem Herbst am Bitcoin Beach Travemünde und wir zeigen Flagge."
-    en: "The first storm flood in autumn at Bitcoin Beach Travemünde and we show one's colours."
+    de: "Die erste Sturmflut in diesem Herbst und wir zeigen Flagge am Bitcoin Beach Travemünde."
+    en: "The first storm flood in autumn and we show one's colours at Bitcoin Beach Travemünde."
   link:
     label: 
-      de: "Nostr"
-      en: "Nostr"
+      de: "Bilder"
+      en: "Pics"
     url: "https://primal.net/e/note1dgdfg7zdtgk0p6z98vj9fe6lfng856s79vnr4zwwwnn9gsade9kqgh80pa"
+
+- type: "misc"
+  date: 2023-10-15T16:04:00+02:00
+  block: 812320
+  headline: 
+    de: "SimpleX"
+    en: "SimpleX"
+  description: 
+    de: "Wir sind bei SimpleX."
+    en: "We are on SimpleX"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://snort.social/nevent1qqsqnnztwpkeeds730rcc6ha9zupxwkrwrq3wpewd3067s4c95yryqcpzamhxue69uhhyetvv9ujumn0wd68ytnzv9hxgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqgevuxw8"
+
+- type: "misc"
+  date: 2023-10-15T19:48:00+02:00
+  block: 812348
+  headline: 
+    de: "Gästebuch"
+    en: "Guestbook"
+  description: 
+    de: "Wir haben unser eigenes Gästebuch. Es war mit auf der BTC Konferenz 2023 in Insbruck und viele bekannte Gesichter haben sich bereits eingetragen. Aber schaut selbst."
+    en: "We have our own guestbook. Many familiar faces have already signed up. Check it out."
+  link:
+    label: 
+      de: "Details"
+      en: "Details"
+    url: "https://snort.social/nevent1qqswtdk4s37grdkgc5r7x8yrg0q7ljh47tn0j6u5q6zaq29lzdz06hgpzamhxue69uhhyetvv9ujumn0wd68ytnzv9hxgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqgz7x5kw"
+
+- type: "meetup"
+  date: 2023-10-14T19:00:00+02:00
+  block: 812167
+  headline: 
+    de: "Meetup #4"
+    en: "meetup #4"
+  link:
+    label: 
+      de: "Flyer"
+      en: "Flyer"
+    url: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup%234.png"
+
+- type: "misc"
+  date: 2023-10-14T18:30:00+02:00
+  block: 812167
+  headline: 
+    de: "Winterbaden #1"
+    en: "Winterbaden #1"
+  description: 
+    de: "Wir starten die Winterbadesaison für Bitcoin Pinguine."
+    en: "We start the ice-bath season for Bitcoin penguins."
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Announcement and flyer"
+    url: "https://snort.social/nevent1qqsywfsxedy4x35md96f3af09yk4n82c6ypruva3nu7tjyjee5d8zfsppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpmuhywf"
+
+
+- type: "misc"
+  date: 2023-10-10T20:09:42+02:00
+  block: 811497
+  headline: 
+    de: "Sticker #2"
+    en: "Stickers #2"
+  description: 
+    de: "Leuchtturm Sticker sind eingetroffen."
+    en: "Lighthouse stickers arrived."
+  link:
+    label: 
+      de: "Foto"
+      en: "Pic"
+    url: "https://snort.social/nevent1qqsfk9tmpl2p29l6q4ffn9hhhj280h9xvhn7jtcvxdkrfrymp8m9gmgppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpupcvf5"
+
+
+- type: "techMeetup"
+  date: 2023-10-04T18:00:00+02:00
+  block: 810624
+  headline: 
+    de: "Tech Meetup #1"
+    en: "Tech Meetup #1"
+  description: 
+    de: "Wir starten ein weiteres Meetup Format. Nur für Devs."
+    en: "We start another variant of meetups. For devs only."
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Announcement and flyer"
+    url: "https://snort.social/nevent1qqsvqkfxufpykagmrags2uke6p9p9x5cpayde5dyeqg24mgp9tsueusppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqphqrzh4"
+
+- type: "action"
+  date: 2023-09-28T09:57:00+02:00
+  block: 809701
+  headline: 
+    de: "Sovereign University"
+    en: "Sovereign University"
+  description: 
+    de: 'Wir starten einen Aufruf an die deutsche Community zur Unterstützung des französischen Projekts "Sovereign University"'
+    en: "We start a call for the German community to support the idea of the french project \"Sovereign University\" and "
+  link:
+    label: 
+      de: "GitHub Issue"
+      en: "GitHub issue"
+    url: "https://github.com/DecouvreBitcoin/sovereign-university-data/issues/35"
+
 
 - type: "misc"
   date: 2023-08-24T10:33:00+02:00
@@ -71,16 +362,60 @@
     en: "The Marktadikalen released a podcast about the sovereign. We have archived the lyrics."
   link: 
     label:
-      de: "GitHub"
-      en: "GitHub"
+      de: "Text"
+      en: "Lyrics"
     url: "https://github.com/BitcoinBeachTravemuende/der-souveraen/"
+
+- type: "misc"
+  date: 2023-10-01T17:45:00+02:00
+  block: 812630
+  headline: 
+    de: "Nostr"
+    en: "Nostr"
+  description: 
+    de: 'Wir sind bei Nostr.'
+    en: "We are on Nostr."
+  link: 
+    label:
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://snort.social/nevent1qqsdfwe488gslet0gsy5mdaxnynhuynk7q7d3223jksf8emw2nmnu8sppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpzc8tdj"
+
+- type: "misc"
+  date: 2023-09-23T15:35:00+02:00
+  block: 808992
+  headline: 
+    de: "Azoren"
+    en: "Azores"
+  description: 
+    de: 'Unsere Sticker schaffen es bis zur BTC Azores 2023.'
+    en: "Our stickers made it to the BTC Azores 2023."
+  link: 
+    label:
+      de: "Foto"
+      en: "Pic"
+    url: "https://twitter.com/BTravemuende/status/1705571459073007995"
+
+
+- type: "meetup"
+  date: 2023-09-02T19:00:00+02:00
+  block: 805916
+  headline: 
+    de: "Meetup #3"
+    en: "meetup #3"
+  link:
+    label: 
+      de: "Ankündigung mit Flyer"
+      en: "Ankündigung and flyer"
+    url: "https://twitter.com/BTravemuende/status/1692473118709649464"
+
 
 - type: "meetup"
   date: 2023-07-29T11:18:00+02:00
   block: 800787
   headline: 
-    de: "2. Meetup"
-    en: "2. meetup"
+    de: "Meetup #2"
+    en: "Meetup #2"
   description: 
     de: "Unser zweites Meetup fand während der Travemünder Woche statt."
     en: "Our second meetup took place during the Travemünder Woche."
@@ -90,17 +425,125 @@
       en: "flyer"
     url: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup-tw_updated.png"
 
+- type: "software"
+  date: 2023-08-30T18:54:00+02:00
+  block: 805477
+  headline: 
+    de: "Meetup Webseite"
+    en: "Meetup website"
+  description: 
+    de: "Die Meetup Webseite ist online. Gesamter Code ist Open-Source."
+    en: "The meetup website is online. All code is open-source."
+  link: 
+    label:
+      de: "Meetup Webseite"
+      en: "Meetup website"
+    url: "https://meetup.bitcoinbeachtravemuende.de/"
+
+- type: "misc"
+  date: 2023-07-29T11:18:00+02:00
+  block: 803740
+  headline: 
+    de: "Twitter"
+    en: "Twitter"
+  description: 
+    de: "Wir sind auf Twitter."
+    en: "We are on Twitter."
+  link: 
+    label:
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://twitter.com/BTravemuende/status/1692472150156800139"
+
+
 - type: "meetup"
   date: 2023-07-01T19:00:00+02:00
   block: 796727
   headline: 
-    de: "1. Meetup"
-    en: "1. Meetup"
+    de: "Meetup #1"
+    en: "Meetup #1"
   description: 
-    de: "Das erste Meetup fand in der aja-Lounge im gleichnamigen Hotel statt. Direkt am zukünftigen Bitcoin Beach Travemünde."
-    en: "First Meetup took place at the aja lounge in the hotel with the same name. Very close to the future Bitcoin Beach Travemünde."
+    de: "Das erste Meetup! In der aja-Lounge mit wunderbarem Blick auf den Bitcoin Beach Travemünde."
+    en: "First Meetup! At aja lounge with a wonderful view to the Bitcoin Beach Travemünde."
   link:
     label:
       de: "Flyer"
       en: "flyer"
     url: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup1.png"
+
+
+- type: "misc"
+  date: 2023-06-28T12:16:00+02:00
+  block: 796287
+  headline: 
+    de: "Sticker #1"
+    en: "Stickers #1"
+  description: 
+    de: 'Bitcoin Beach Sticker sind eingetroffen. Kostenlos für alle.'
+    en: "Bitcoin Beach stickers just arrived. Free for everyone."
+  link: 
+    label:
+      de: 'Foto bei Telegram'
+      en: "Pic at Telegram"
+    url: "https://t.me/BitcoinBeachMeetupTravemuende/10"
+
+
+- type: "misc"
+  date: 2023-06-24T13:58:00+02:00
+  block: 795709
+  headline: 
+    de: "awesome-bitcoin-community"
+    en: "awesome-bitcoin-community"
+  description: 
+    de: 'Wir starten die "awesome list" von Bitcoin Community Ressourcen. Von der Community für die Community. Open-Source.'
+    en: "We start the awesome list of Bitcoin community resources. From the community for the community. Open-source. "
+  link: 
+    label:
+      de: 'awesome-bitcoin-community'
+      en: "awesome-bitcoin-community"
+    url: "https://github.com/BitcoinBeachTravemuende/awesome-bitcoin-community"
+
+- type: "software"
+  date: 2023-06-21T15:35:00+02:00
+  block: 795321
+  headline: 
+    de: "Der Bitcoin Virus"
+    en: "The Bitcoin Virus"
+  description: 
+    de: "Kahnsis' Buch \"Der Bitcoin Virus\" bekommt eine Online-Version. Der gesamte Code ist Open-Source."
+    en: "Kahnsis' book \"The Bitcoin Virus\" will be available online to read. All code is open-source."
+  link: 
+    label:
+      de: "Buch online lesen"
+      en: "Read the book online"
+    url: "https://bitcoinbeachtravemuende.github.io/DerBitcoinVirus/"
+
+- type: "misc"
+  date: 2023-06-21T15:00:00+02:00
+  block: 795320
+  headline: 
+    de: "GitHub"
+    en: "GitHub"
+  description: 
+    de: "Wir sind Open-Source. Darum gründen wir die Bitcoin Beach Travemünde Organisation bei GitHub."
+    en: "We are open-source. That's why we've founded the Bitcon Beach Travemünde organization at GitHub."
+  link: 
+    label:
+      de: "GitHub Organisation"
+      en: "GitHub organization"
+    url: "https://github.com/BitcoinBeachTravemuende"
+
+- type: "misc"
+  date: 2023-06-14T18:08:00+02:00
+  block: 794326
+  headline: 
+    de: "Telegram"
+    en: "Telegram"
+  description: 
+    de: "Telegram Gruppe ist öffentlich."
+    en: "Telegram group is public."
+  link: 
+    label:
+      de: "Telegram"
+      en: "Telegram"
+    url: "https://t.me/BitcoinBeachMeetupTravemuende"

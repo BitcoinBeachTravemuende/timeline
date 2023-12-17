@@ -7,8 +7,10 @@ export default {
       colors: {
         // Inspired by https://colorhunt.co/palette/2b39643482aa6db3b5f9cc7b
         meetup: '#F7931A', // bitcoin
+        techMeetup: '#0f172a', 
+        techMeetupDark: '#6b7280',
         action: '#2B3964',
-        actionDark: '#697391',
+        actionDark: '#06b6d4',
         software: '#3482AA', 
         misc: '#6DB3B5', 
         cinema: '#F9CC7B', 
