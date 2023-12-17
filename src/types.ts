@@ -2,6 +2,7 @@ import { z } from "astro/zod";
 
 export const eventType = z.enum([
   "meetup",
+  "techMeetup",
   "action",
   "software",
   "cinema",
@@ -19,12 +20,14 @@ const translations = z.record(
   z.string()
 )
 
+const oTranslations = translations.optional();
+
 const event = z.object({
   type: eventType.default("unknown"),
   date: z.date(),
   block: z.number(),
   headline: translations,
-  description: translations,
+  description: oTranslations,
   link: z.object({
     label: translations,
     url: z.string().url()
