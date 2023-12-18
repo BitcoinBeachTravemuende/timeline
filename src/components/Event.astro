@@ -46,12 +46,11 @@ const t = useTranslations(lang);
   )}
   id={block.toString()}
   x-data="{ shown: false, expanded: false }"
-  x-intersect.full="shown = true"
-  x-intersect:leave="shown = false"
+  x-intersect.once.threshold.30="shown = true"
   >
   <!-- 
+    x-intersect:leave="shown = false"
     x-intersect.once.full="shown = true" 
-  
   -->
   <!-- event wrapper -->
   <div
