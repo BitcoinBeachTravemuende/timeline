@@ -8,6 +8,7 @@ import { useTranslations } from "src/i18n";
 import { COLORS_BG, COLORS_TEXT } from "../const";
 import Info from "./icons/Info.astro";
 import Close from "./icons/Close.astro";
+import Logo from "./Logo.astro";
 
 type Props = {
   lang: Lang;
@@ -72,10 +73,11 @@ const countAll = events.length;
       </template>
     </button>
   </div>
+
   <!-- logo -->
-  <div
-    class="border-white bg-gray-50 dark:bg-gray-700 dark:border-gray-900 rounded-full w-24 h-24 md:w-32 bg-contain md:h-32 mt-6 bg-[url('/logo.svg')] dark:bg-[url('/logo_dark.svg')]"
-  >
+  <Logo class=" border-whitedark:border-gray-900 rounded-full bg-gray-50 dark:bg-gray-700 scale-75 md:scale-100 mt-6 " />
+
+
   </div>
   <!-- title -->
   <h1
