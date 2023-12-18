@@ -3,7 +3,8 @@ import { useTranslations } from "../i18n";
 import External from "./icons/External.astro";
 import Arrow from "./icons/Arrow.astro";
 import Close from "./icons/Close.astro";
-import type { Event as BBTEvent, Lang, EventType } from "../types";
+import type { Event as BBTEvent, Lang } from "../types";
+import { COLORS_BG, COLORS_BORDER, COLORS_TEXT } from "../const";
 import { twMerge } from "tailwind-merge";
 
 type Props = {
@@ -18,39 +19,7 @@ const {
 
 const t = useTranslations(lang);
 
-type ColorsByType = {
-  [key in EventType]: string;
-};
 
-const textColors: ColorsByType = {
-  action: `text-action dark:text-actionDark`,
-  meetup: `text-meetup`,
-  techMeetup: `text-techMeetup dark:text-techMeetupDark`,
-  software: `text-software`,
-  cinema: `text-cinema dark:text-cinemaDark`,
-  misc: `text-misc`,
-  unknown: `text-unknown`,
-};
-
-const bgColors: ColorsByType = {
-  action: `bg-action dark:bg-actionDark`,
-  meetup: `bg-meetup`,
-  techMeetup: `bg-techMeetup dark:bg-techMeetupDark`,
-  software: `bg-software`,
-  cinema: `bg-cinema dark:bg-cinemaDark`,
-  misc: `bg-misc`,
-  unknown: `bg-unknown`,
-};
-
-const borderColors: ColorsByType = {
-  action: `border-action dark:border-actionDark`,
-  meetup: `border-meetup`,
-  techMeetup: `border-techMeetup dark:border-techMeetupDark`,
-  software: `border-software`,
-  cinema: `border-cinema dark:border-cinemaDark`,
-  misc: `border-misc`,
-  unknown: `border-unknown`,
-};
 ---
 
 <section
@@ -130,14 +99,14 @@ const borderColors: ColorsByType = {
       <div
         class={twMerge(
           "absolute inset-0 opacity-0 overflow-hidden -z-20",
-          textColors[eventType]
+          COLORS_TEXT[eventType]
         )}
         :class="{ 'opacity-0 delay-0 transition-none' : !expanded, 'opacity-10 delay-200' : expanded}"
       >
         <div
           class={twMerge(
             "absolute -bottom-3 md:-bottom-6 right-0 text-6xl md:text-8xl 2xl:text-9xl font-extrabold ease",
-            textColors[eventType]
+            COLORS_TEXT[eventType]
           )}
         >
           {block}
@@ -152,7 +121,7 @@ const borderColors: ColorsByType = {
           class={twMerge(
             "w-full cursor-pointer leading-none uppercase font-semibold",
             "text-lg md:text-2xl ",
-            textColors[eventType]
+            COLORS_TEXT[eventType]
           )}
         >
           {headline[lang]}
@@ -163,7 +132,7 @@ const borderColors: ColorsByType = {
             "w-8 h-8 md:w-10 md:h-10",
             "-right-6 md:-right-8",
             "group-hover/h:animate-bounce group-hover/h:top-1 ease",
-            textColors[eventType]
+            COLORS_TEXT[eventType]
           )}
           x-show="!expanded"
         />
@@ -173,7 +142,7 @@ const borderColors: ColorsByType = {
             "w-8 h-8 md:h-10 ",
             "-right-7 md:-right-8",
             "group-hover/h:rotate-90 ease",
-            textColors[eventType]
+            COLORS_TEXT[eventType]
           )}
           x-show="expanded"
         />
@@ -195,7 +164,7 @@ const borderColors: ColorsByType = {
           <p
             class={twMerge(
               "hidden md:block",
-              bgColors[eventType],
+              COLORS_BG[eventType],
               "text-white dark:text-gray-100",
               "py-0 px-4 text-xs rounded-full",
               "leading-0"
@@ -234,9 +203,9 @@ const borderColors: ColorsByType = {
       "hover:scale-110 shadow-md",
       "cursor-pointer",
       "ease",
-      textColors[eventType],
-      bgColors[eventType],
-      borderColors[eventType],
+      COLORS_TEXT[eventType],
+      COLORS_BG[eventType],
+      COLORS_BORDER[eventType],
       "rounded-full px-3 py-1",
       "border-2 xl:border-4",
       

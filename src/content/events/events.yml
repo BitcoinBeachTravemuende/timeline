@@ -56,7 +56,7 @@
       en: "Announcement and flyer"
     url: "https://snort.social/nevent1qqsyhwpffxftrm4nr0dfv2tyv37kypzm92d3zhgfjmez32x2hu9tf9qprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqs3uhc3j"
 
-- type: "techMeetup"
+- type: "meetup"
   date: 2023-11-15T18:00:00+02:00
   block: 816902
   headline: 
@@ -189,7 +189,7 @@
       en: "Video at Nostr"
     url: "https://snort.social/nevent1qqszvrgjmkk2jp5v4f8sx4qj9eeele0xsevardrmzr77qfckd4rzeacppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpmcvm96"
 
-- type: "software"
+- type: "tech"
   date: 2023-11-08T12:32:00+02:00
   block: 815851
   headline: 
@@ -204,7 +204,7 @@
       en: "exify"
     url: "https://bitcoinbeachtravemuende.github.io/exify/"
 
-- type: "techMeetup"
+- type: "meetup"
   date: 2023-10-25T18:00:00+02:00
   block: 813792
   headline: 
@@ -233,7 +233,7 @@
       en: "Pics"
     url: "https://primal.net/e/note1dgdfg7zdtgk0p6z98vj9fe6lfng856s79vnr4zwwwnn9gsade9kqgh80pa"
 
-- type: "misc"
+- type: "tech"
   date: 2023-10-15T16:04:00+02:00
   block: 812320
   headline: 
@@ -307,7 +307,7 @@
     url: "https://snort.social/nevent1qqsfk9tmpl2p29l6q4ffn9hhhj280h9xvhn7jtcvxdkrfrymp8m9gmgppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpupcvf5"
 
 
-- type: "techMeetup"
+- type: "meetup"
   date: 2023-10-04T18:00:00+02:00
   block: 810624
   headline: 
@@ -412,7 +412,7 @@
       en: "flyer"
     url: "https://github.com/BitcoinBeachTravemuende/media/blob/main/meetups/meetup-tw_updated.png"
 
-- type: "software"
+- type: "tech"
   date: 2023-08-30T18:54:00+02:00
   block: 805477
   headline: 
@@ -490,7 +490,7 @@
       en: "awesome-bitcoin-community"
     url: "https://github.com/BitcoinBeachTravemuende/awesome-bitcoin-community"
 
-- type: "software"
+- type: "tech"
   date: 2023-06-21T15:35:00+02:00
   block: 795321
   headline: 
@@ -505,7 +505,7 @@
       en: "Read the book online"
     url: "https://bitcoinbeachtravemuende.github.io/DerBitcoinVirus/"
 
-- type: "misc"
+- type: "tech"
   date: 2023-06-21T15:00:00+02:00
   block: 795320
   headline: 
