@@ -4,7 +4,5 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bitcoinbeachtravemuende.github.io',
-  base: '/timeline',
   integrations: [tailwind()]
 });
