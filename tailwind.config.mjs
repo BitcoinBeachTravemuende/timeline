@@ -13,7 +13,17 @@ export default {
         misc: '#6DB3B5', 
         cinema: '#F9CC7B', 
         cinemaDark: '#e5a32d'
-      }
+      },
+      animation: {
+        'lightfire': 'lightfire-rotate 5s linear infinite',
+      },
+      keyframes: {
+        'lightfire-rotate': {
+          '0%': { opacity: .2, transform: 'rotate(0deg)' },
+          '50%': { opacity: .4 },
+          '100%': { opacity: .2, transform: 'rotate(45deg)' },
+        },
+      },
     },
 	},
 	plugins: [],
