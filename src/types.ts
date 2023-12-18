@@ -2,12 +2,10 @@ import { z } from "astro/zod";
 
 export const eventType = z.enum([
   "meetup",
-  "techMeetup",
   "action",
-  "software",
+  "tech",
   "cinema",
   "misc",
-  "unknown",
 ]);
 
 export type EventType = z.infer<typeof eventType>;
@@ -23,7 +21,7 @@ const translations = z.record(
 const oTranslations = translations.optional();
 
 const event = z.object({
-  type: eventType.default("unknown"),
+  type: eventType,
   date: z.date(),
   block: z.number(),
   headline: translations,
@@ -46,6 +44,7 @@ export const translationKey = z.enum([
   "title",
   "blocktime",
   ...eventType.options,
+  "entries",
   "theEnd",
   "theBeginning",
   "builtWith",
@@ -59,3 +58,7 @@ export const translation = z.record(
   );
 
 export type Translation = z.infer<typeof translation>;
+
+export type ColorsByType = {
+  [key in EventType]: string;
+};

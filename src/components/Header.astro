@@ -1,21 +1,44 @@
 ---
 import { LANGUAGES } from "../const";
-import type { Lang } from "../types";
+import type { EventType, Events, Lang } from "../types";
 import Light from "./icons/LightMode.astro";
 import Dark from "./icons/DarkMode.astro";
 import { twMerge } from "tailwind-merge";
 import { useTranslations } from "src/i18n";
+import { COLORS_BG, COLORS_TEXT } from "../const";
+import Info from "./icons/Info.astro";
+import Close from "./icons/Close.astro";
 
 type Props = {
   lang: Lang;
+  events: Events;
 };
 
-const { lang } = Astro.props;
+const { lang, events } = Astro.props;
 
 const t = useTranslations(lang);
+
+type CountTypes = { [key in EventType]: number };
+
+const INITIAL_COUNT: CountTypes = {
+  misc: 0,
+  meetup: 0,
+  action: 0,
+  tech: 0,
+  cinema: 0,
+};
+
+const countTypes: CountTypes = events.reduce((acc, e) => {
+  acc[e.type] += 1;
+  return acc;
+}, INITIAL_COUNT);
+
+const countAll = events.length;
 ---
 
-<header class="w-full flex flex-col items-center pt-3 pb-16 mb-20 px-6 bg-gray-50 dark:bg-gray-800">
+<header
+  class="w-full flex flex-col items-center pt-3 pb-16 mb-20 px-6 bg-gray-50 dark:bg-gray-800 ease"
+>
   <div class="container mx-auto flex justify-end items-center">
     <ul class="flex items-center">
       {
@@ -49,9 +72,12 @@ const t = useTranslations(lang);
       </template>
     </button>
   </div>
+  <!-- logo -->
   <div
     class="border-white bg-gray-50 dark:bg-gray-700 dark:border-gray-900 rounded-full w-24 h-24 md:w-32 bg-contain md:h-32 mt-6 bg-[url('/logo.svg')] dark:bg-[url('/logo_dark.svg')]"
-  />
+  >
+  </div>
+  <!-- title -->
   <h1
     class="text-3xl md:text-4xl text-gray-500 dark:text-gray-300 text-center mt-6 uppercase font-semibold leading-0"
   >
@@ -62,4 +88,79 @@ const t = useTranslations(lang);
   >
     Bitcoin Beach Travemünde
   </h2>
+
+  <!-- entries -->
+  <div
+    class="group/h cursor-pointer mt-12 text-gray-400 hover:text-gray-500 dark:text-gray-400 flex flex-col items-center ease"
+    x-data="{ expanded: false }"
+    @click="expanded = !expanded"
+  >
+    <h3
+      class="text-base md:text-xl uppercase font-semibold relative pl-8 pr-10 py-2 inline-block rounded-full"
+      :class="{ 'bg-white dark:bg-gray-900': expanded, 'bg-gray-100 hover:bg-white dark:bg-gray-700 dark:hover:bg-gray-900': !expanded }"
+    >
+      {countAll}
+      {t("entries")}
+      <Info
+        class={twMerge(
+          "absolute top-1/2 -translate-y-1/2",
+          "w-5 h-5",
+          "right-3",
+          "ease",
+          "text-inherit"
+        )}
+        :class="{ 'rotate-180': expanded }"
+        x-show="!expanded"
+      />
+      <Close
+        class={twMerge(
+          "absolute top-1/2 -translate-y-1/2",
+          "w-8 h-8",
+          "right-2",
+          "ease",
+          "text-inherit",
+          "group-hover/h:rotate-90 ease"
+        )}
+        x-show="expanded"
+      />
+    </h3>
+
+    <div
+      x-show="expanded"
+      x-transition:enter="ease"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="ease"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      class="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 last:odd:grid-cols-1 bg-white dark:bg-gray-900 my-3 p-3 md:p-8 rounded-xl ease"
+    >
+      {
+        Object.entries(countTypes).map(([key, value]) => (
+          <div
+            class={twMerge(
+              "flex flex-col items-center justify-center rounded-lg px-2 py-2 md:w-24 md:h-24 w-20 h-20 ",
+              COLORS_BG[key as EventType]
+            )}
+          >
+            <div
+              class={twMerge(
+                "text-white dark:text-gray-100 text-4xl md:text-5xl my-1 font-semibold"
+              )}
+            >
+              {value}
+            </div>
+            <div
+              class={twMerge(
+                "bg-white text-[0.6rem] uppercase px-2 py-0 rounded-full w-full text-center",
+                COLORS_TEXT[key as EventType]
+              )}
+            >
+              {t(key as EventType)}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </header>
