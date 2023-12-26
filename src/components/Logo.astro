@@ -1,7 +1,6 @@
 ---
 
 import Btc from "./icons/Btc.astro";
-import Lightfire from "./icons/Lightfire.astro";
 import Lighthouse from "./icons/Lighthouse.astro";
 
 const {class: className, ...rest} = Astro.props;
@@ -15,9 +14,9 @@ x-data="{ shown: true }"
 x-intersect="shown = true"
 x-intersect:leave="shown = false"
 >
-  <Lightfire class="absolute inset-0 -left-1/3 -top-[70px] text-meetup opacity-30 "
+  <div class="absolute inset-[-20px] -top-[65px] bg-[repeating-conic-gradient(_from_0deg,#F7931A_0deg_12deg,_transparent_12deg_22.5deg)] "
   :class="{ 'animate-lightfire': shown, 'animate-none': !shown }"
-  />
+  ></div>
   <Lighthouse class="absolute inset-0 text-gray-900 dark:text-white fill-white dark:fill-gray-900" />
   <Btc class="absolute left-1/2 -translate-x-1/2 top-[35px]" />
 </div>
