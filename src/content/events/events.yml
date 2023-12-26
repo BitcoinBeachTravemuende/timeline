@@ -1,4 +1,19 @@
 
+- type: "tech"
+  date: 2023-12-18T19:17:00+02:00
+  block: 821812
+  headline: 
+    de: "Zeitleiste"
+    en: "Timeline"
+  description:
+    de: "Der Rückblick 2023 als animierte Zeitleiste. Von jedem editierbar auch ohne Programmierkenntnisse. Open-Source bei GitHub."
+    en: "Our review 2023 as an animated timeline. It can be edited by anyone without any programming skills. Open-source at GitHub."
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note1p0kghwnl6et7wt2lg58csv5pp4gg9rssf5guemf9s66clya0jcqq84l2yz"
+
 - type: "misc"
   date: 2023-12-06T18:12:00+02:00
   block: 819998
