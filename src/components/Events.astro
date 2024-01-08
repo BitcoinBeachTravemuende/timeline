@@ -1,28 +1,30 @@
 ---
-import { useTranslations } from "../i18n";
-import { type Events, type Lang } from '../types';
-import Event from './Event.astro';
+import { useTranslations } from '../i18n'
+import { type Events, type Lang } from '../types'
+import Event from './Event.astro'
 
 type Props = {
-	events: Events
+  events: Events
   lang: Lang
 }
 
-const { lang, events } = Astro.props;
+const { lang, events } = Astro.props
 
-const t = useTranslations(lang);
+const t = useTranslations(lang)
 ---
 
-<div class="w-full">
-  <h2 class="text-gray-300 dark:text-gray-500 text-md md:text-xl font-semibold uppercase text-center mb-8 md:mb-12">
+<div class='w-full'>
+  <h2
+    class='text-md mb-8 text-center font-semibold uppercase text-gray-300 dark:text-gray-500 md:mb-12 md:text-xl'
+  >
     {t('theBeginning')}
   </h2>
   <div>
-    {events.map(event => (
-      <Event lang={lang} event={event} />
-      ))}
+    {events.map((event) => <Event lang={lang} event={event} />)}
   </div>
-  <p class="text-gray-300 dark:text-gray-500 text-md md:text-xl font-semibold  uppercase text-center mt-8 md:mt-16">
+  <p
+    class='text-md mt-8 text-center font-semibold uppercase text-gray-300 dark:text-gray-500 md:mt-16 md:text-xl'
+  >
     {t('theEnd')}
   </p>
 </div>

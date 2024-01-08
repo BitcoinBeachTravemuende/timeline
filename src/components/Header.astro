@@ -1,56 +1,56 @@
 ---
-import { LANGUAGES } from "../const";
-import type { EventType, Events, Lang } from "../types";
-import Light from "./icons/LightMode.astro";
-import Dark from "./icons/DarkMode.astro";
-import { twMerge } from "tailwind-merge";
-import { useTranslations } from "src/i18n";
-import { COLORS_BG, COLORS_TEXT } from "../const";
-import Info from "./icons/Info.astro";
-import Close from "./icons/Close.astro";
-import Logo from "./Logo.astro";
+import { LANGUAGES } from '../const'
+import type { EventType, Events, Lang } from '../types'
+import Light from './icons/LightMode.astro'
+import Dark from './icons/DarkMode.astro'
+import { twMerge } from 'tailwind-merge'
+import { useTranslations } from 'src/i18n'
+import { COLORS_BG, COLORS_TEXT } from '../const'
+import Info from './icons/Info.astro'
+import Close from './icons/Close.astro'
+import Logo from './Logo.astro'
 
 type Props = {
-  lang: Lang;
-  events: Events;
-};
+  lang: Lang
+  events: Events
+}
 
-const { lang, events } = Astro.props;
+const { lang, events } = Astro.props
 
-const t = useTranslations(lang);
+const t = useTranslations(lang)
 
-type CountTypes = { [key in EventType]: number };
+type CountTypes = { [key in EventType]: number }
 
 const INITIAL_COUNT: CountTypes = {
   misc: 0,
   meetup: 0,
   action: 0,
   tech: 0,
-  cinema: 0,
-};
+  cinema: 0
+}
 
 const countTypes: CountTypes = events.reduce((acc, e) => {
-  acc[e.type] += 1;
-  return acc;
-}, INITIAL_COUNT);
+  acc[e.type] += 1
+  return acc
+}, INITIAL_COUNT)
 
-const countAll = events.length;
+const countAll = events.length
 ---
 
 <header
-  class="w-full flex flex-col items-center pt-3 pb-16 mb-20 px-6 bg-gray-50 dark:bg-gray-800 ease"
+  class='ease mb-20 flex w-full flex-col items-center bg-gray-50 px-6 pb-16 pt-3 dark:bg-gray-800'
 >
-  <div class="container mx-auto flex justify-end items-center">
-    <ul class="flex items-center">
+  <div class='container mx-auto flex items-center justify-end'>
+    <ul class='flex items-center'>
       {
         LANGUAGES.map((l) => (
-          <li class="md:first-of-type:mr-1 uppercase">
+          <li class='uppercase md:first-of-type:mr-1'>
             <a
               class={twMerge(
-                "text-sm md:text-lg p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 ease",
-                lang === l ? "font-bold" : "font-normal"
+                'ease p-1 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 md:text-lg',
+                lang === l ? 'font-bold' : 'font-normal'
               )}
-              href={l === "de" ? "/" : `/${l}`}
+              href={l === 'de' ? '/' : `/${l}`}
             >
               {l}
             </a>
@@ -60,101 +60,101 @@ const countAll = events.length;
     </ul>
 
     <button
-      x-on:click="$store.darkMode.toggle()"
-      class="ml-3 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+      x-on:click='$store.darkMode.toggle()'
+      class='ml-3 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
     >
-      <template x-if="$store.darkMode.on">
+      <template x-if='$store.darkMode.on'>
         <!-- https://api.iconify.design/material-symbols:sunny-rounded.svg -->
-        <Light class="w-6 h-6" />
+        <Light class='h-6 w-6' />
       </template>
       <!-- https://api.iconify.design/material-symbols-light:dark-mode-rounded.svg -->
-      <template x-if="!$store.darkMode.on">
-        <Dark class="w-6 h-6" />
+      <template x-if='!$store.darkMode.on'>
+        <Dark class='h-6 w-6' />
       </template>
     </button>
   </div>
 
   <!-- logo -->
-  <Logo class=" border-whitedark:border-gray-900 rounded-full bg-gray-50 dark:bg-gray-700 scale-75 md:scale-100 mt-6 " />
+  <Logo
+    class='border-whitedark:border-gray-900 mt-6 scale-75 rounded-full bg-gray-50 dark:bg-gray-700 md:scale-100'
+  />
 
-
-  </div>
   <!-- title -->
   <h1
-    class="text-3xl md:text-4xl text-gray-500 dark:text-gray-300 text-center mt-6 uppercase font-semibold leading-0"
+    class='leading-0 mt-6 text-center text-3xl font-semibold uppercase text-gray-500 dark:text-gray-300 md:text-4xl'
   >
-    {t("title")}
+    {t('title')}
   </h1>
   <h2
-    class="text-gray-400 dark:text-gray-400 text-xs md:text-md uppercase tracking-wide md:tracking-widest text-center"
+    class='md:text-md text-center text-xs uppercase tracking-wide text-gray-400 dark:text-gray-400 md:tracking-widest'
   >
     Bitcoin Beach Travemünde
   </h2>
 
   <!-- entries -->
   <div
-    class="group/h cursor-pointer mt-12 text-gray-400 hover:text-gray-500 dark:text-gray-400 flex flex-col items-center ease"
-    x-data="{ expanded: false }"
-    @click="expanded = !expanded"
+    class='group/h ease mt-12 flex cursor-pointer flex-col items-center text-gray-400 hover:text-gray-500 dark:text-gray-400'
+    x-data='{ expanded: false }'
+    @click='expanded = !expanded'
   >
     <h3
-      class="text-base md:text-xl uppercase font-semibold relative pl-8 pr-10 py-2 inline-block rounded-full"
+      class='relative inline-block rounded-full py-2 pl-8 pr-10 text-base font-semibold uppercase md:text-xl'
       :class="{ 'bg-white dark:bg-gray-900': expanded, 'bg-gray-100 hover:bg-white dark:bg-gray-700 dark:hover:bg-gray-900': !expanded }"
     >
       {countAll}
-      {t("entries")}
+      {t('entries')}
       <Info
         class={twMerge(
-          "absolute top-1/2 -translate-y-1/2",
-          "w-5 h-5",
-          "right-3",
-          "ease",
-          "text-inherit"
+          'absolute top-1/2 -translate-y-1/2',
+          'w-5 h-5',
+          'right-3',
+          'ease',
+          'text-inherit'
         )}
         :class="{ 'rotate-180': expanded }"
-        x-show="!expanded"
+        x-show='!expanded'
       />
       <Close
         class={twMerge(
-          "absolute top-1/2 -translate-y-1/2",
-          "w-8 h-8",
-          "right-2",
-          "ease",
-          "text-inherit",
-          "group-hover/h:rotate-90 ease"
+          'absolute top-1/2 -translate-y-1/2',
+          'w-8 h-8',
+          'right-2',
+          'ease',
+          'text-inherit',
+          'group-hover/h:rotate-90 ease'
         )}
-        x-show="expanded"
+        x-show='expanded'
       />
     </h3>
 
     <div
-      x-show="expanded"
-      x-transition:enter="ease"
-      x-transition:enter-start="opacity-0"
-      x-transition:enter-end="opacity-100"
-      x-transition:leave="ease"
-      x-transition:leave-start="opacity-100"
-      x-transition:leave-end="opacity-0"
-      class="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4 last:odd:grid-cols-1 bg-white dark:bg-gray-900 my-3 p-3 md:p-8 rounded-xl ease"
+      x-show='expanded'
+      x-transition:enter='ease'
+      x-transition:enter-start='opacity-0'
+      x-transition:enter-end='opacity-100'
+      x-transition:leave='ease'
+      x-transition:leave-start='opacity-100'
+      x-transition:leave-end='opacity-0'
+      class='ease my-3 grid grid-cols-2 gap-3 rounded-xl bg-white p-3 last:odd:grid-cols-1 dark:bg-gray-900 md:grid-cols-5 md:gap-4 md:p-8'
     >
       {
         Object.entries(countTypes).map(([key, value]) => (
           <div
             class={twMerge(
-              "flex flex-col items-center justify-center rounded-lg px-2 py-2 md:w-24 md:h-24 w-20 h-20 ",
+              'flex h-20 w-20 flex-col items-center justify-center rounded-lg px-2 py-2 md:h-24 md:w-24 ',
               COLORS_BG[key as EventType]
             )}
           >
             <div
               class={twMerge(
-                "text-white dark:text-gray-100 text-4xl md:text-5xl my-1 font-semibold"
+                'my-1 text-4xl font-semibold text-white dark:text-gray-100 md:text-5xl'
               )}
             >
               {value}
             </div>
             <div
               class={twMerge(
-                "bg-white text-[0.6rem] uppercase px-2 py-0 rounded-full w-full text-center",
+                'w-full rounded-full bg-white px-2 py-0 text-center text-[0.6rem] uppercase',
                 COLORS_TEXT[key as EventType]
               )}
             >
