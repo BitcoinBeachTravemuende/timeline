@@ -1,29 +1,27 @@
 ---
-import { useTranslations } from "src/i18n";
-import type { Lang } from "src/types";
-import Github from "./icons/Github.astro";
+import { useTranslations } from 'src/i18n'
+import type { Lang } from 'src/types'
+import Github from './icons/Github.astro'
 
 type Props = {
-  lang: Lang;
-};
+  lang: Lang
+}
 
-const { lang } = Astro.props;
+const { lang } = Astro.props
 
-const t = useTranslations(lang);
+const t = useTranslations(lang)
 ---
 
-<footer class="container mx-auto py-1 md:py-3 px-6 ">
-  <div class="flex justify-center">
+<footer class='container mx-auto px-6 py-1 md:py-3'>
+  <div class='flex justify-center'>
     <a
-      class="mt-28 mb-2 text-gray-300 hover:text-gray-400 dark:text-gray-500 hover:dark:text-gray-400 ease"
-      href="https://github.com/BitcoinBeachTravemuende/timeline"
-      ><Github class="text-inherit w-6 h-6" /></a
+      class='ease mb-2 mt-28 text-gray-300 hover:text-gray-400 dark:text-gray-500 hover:dark:text-gray-400'
+      href='https://github.com/BitcoinBeachTravemuende/timeline'
+      ><Github class='h-6 w-6 text-inherit' /></a
     >
   </div>
-  <p
-    class="text-gray-400 dark:text-gray-500 text-xs px-2 py-2 text-center"
-  >
-    {t("builtWith")}
-    <span class="text-meetup">♥</span> in Travemünde.
+  <p class='px-2 py-2 text-center text-xs text-gray-400 dark:text-gray-500'>
+    {t('builtWith')}
+    <span class='text-meetup'>♥</span> in Travemünde.
   </p>
 </footer>

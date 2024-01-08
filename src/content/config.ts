@@ -1,5 +1,5 @@
-import { defineCollection } from 'astro:content';
-import { events, translation } from '../types';
+import { defineCollection } from 'astro:content'
+import { events, translation } from '../types'
 
 // Defining Collections to provide all data anybody can update easily
 // Note: Data in YAML needs type 'data', data in Markdown needs type 'content'
@@ -7,15 +7,15 @@ import { events, translation } from '../types';
 
 const eventsCollection = defineCollection({
   type: 'data',
-  schema: events,
- });
+  schema: events
+})
 
- const i18nCollection = defineCollection({
-  type: 'data', 
-  schema: translation,
- });
+const i18nCollection = defineCollection({
+  type: 'data',
+  schema: translation
+})
 
 export const collections = {
-  'events': eventsCollection,
-  'i18n': i18nCollection,
-};
+  events: eventsCollection,
+  i18n: i18nCollection
+}

@@ -1,22 +1,25 @@
 ---
+import Btc from './icons/Btc.astro'
+import Lighthouse from './icons/Lighthouse.astro'
 
-import Btc from "./icons/Btc.astro";
-import Lighthouse from "./icons/Lighthouse.astro";
-
-const {class: className, ...rest} = Astro.props;
-
+const { class: className, ...rest } = Astro.props
 ---
 
-<div 
-class=`relative ${className} overflow-hidden` 
-style="width:140px; height:140px;" {...rest}
-x-data="{ shown: true }"
-x-intersect="shown = true"
-x-intersect:leave="shown = false"
+<div
+  class=`relative ${className} overflow-hidden`
+  style='width:140px; height:140px;'
+  {...rest}
+  x-data='{ shown: true }'
+  x-intersect='shown = true'
+  x-intersect:leave='shown = false'
 >
-  <div class="absolute inset-[-20px] -top-[65px] bg-[repeating-conic-gradient(_from_0deg,#F7931A_0deg_12deg,_transparent_12deg_22.5deg)] "
-  :class="{ 'animate-lightfire': shown, 'animate-none': !shown }"
-  ></div>
-  <Lighthouse class="absolute inset-0 text-gray-900 dark:text-white fill-white dark:fill-gray-900" />
-  <Btc class="absolute left-1/2 -translate-x-1/2 top-[35px]" />
+  <div
+    class='absolute inset-[-20px] -top-[65px] bg-[repeating-conic-gradient(_from_0deg,#F7931A_0deg_12deg,_transparent_12deg_22.5deg)]'
+    :class="{ 'animate-lightfire': shown, 'animate-none': !shown }"
+  >
+  </div>
+  <Lighthouse
+    class='absolute inset-0 fill-white text-gray-900 dark:fill-gray-900 dark:text-white'
+  />
+  <Btc class='absolute left-1/2 top-[35px] -translate-x-1/2' />
 </div>
