@@ -1,3 +1,27 @@
+- type: "meetup"
+  date: 2024-01-06T18:00:00+02:00
+  block: 824638
+  headline: 
+    de: "Meetup #7"
+    en: "meetup #7"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://snort.social/nevent1qqsph8nkq3rrl0mp840sxtkq4xvjm0gxw2dp22tlwvnyhw7axaz3gjqpzamhxue69uhhyetvv9ujuurjd9kkzmpwdejhgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqgu2zp3f"
+
+- type: "misc"
+  date: 2024-01-06T17:30:00+02:00
+  block: 824633
+  headline: 
+    de: "Winterbaden #3"
+    en: "Ice bath #3"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://snort.social/nevent1qqs9glu2hyzcm2jqc5cw34cltj5gkjq0wcjau2kunj62lteqs33g39cpzamhxue69uhhyetvv9ujuurjd9kkzmpwdejhgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqghypll7"
+
 
 - type: "tech"
   date: 2023-12-18T19:17:00+02:00
@@ -52,8 +76,8 @@
     en: "meetup #6"
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Announcement and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsyhwpffxftrm4nr0dfv2tyv37kypzm92d3zhgfjmez32x2hu9tf9qprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqs3uhc3j"
 
 - type: "cinema"
@@ -67,8 +91,8 @@
     en: "Movie: Human B"
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Announcement and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsyhwpffxftrm4nr0dfv2tyv37kypzm92d3zhgfjmez32x2hu9tf9qprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqs3uhc3j"
 
 - type: "meetup"
@@ -79,8 +103,8 @@
     en: "Tech-Meetup #3"
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Ankündigung and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsxrv2c760upv5vmwftc5r0f9za7qddnssj6gl992cyypkcm0p057sprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqspcknl3"
 
 - type: "action"
@@ -125,8 +149,8 @@
     en: "The fifth meetup. For the first time we got a talk - all in the spirit of #NostrNovember. It's the first Nostr meetup in Germany btw."
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Ankündigung and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqstht4lw2zkvcf6mf3pghzlx86fffmnvm8wa6fl0aegkd7ht9je84qppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqp7ajnr9"
 
 - type: "cinema"
@@ -140,8 +164,8 @@
     en: "Movie: Who is Bitcoin."
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Ankündigung and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://primal.net/e/note1ljpxpde76ydrz7kdtvamt92lyyfe6c88rt03v4hc5tz50u34xz0qaetmtj"
 
 
@@ -150,11 +174,11 @@
   block: 815297
   headline: 
     de: "Winterbaden #2"
-    en: "Winterbaden #2"
+    en: "Ice bath #2"
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Ankündigung and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsf9ss26v6rntj0d0tuexgnqt62vkfl0r4frlnsu69khhsfs84l8fgprfmhxue69uhkummnw3ezucm9wf3kzarjdamxztndv5hsygz2llq5c45jyke2r3hq6rue3yhend63r8mca6w7f9wgud7hg25spqpsgqqqqqqse6c04l"
 
 
@@ -227,8 +251,8 @@
     en: "Tech Meetup #2"
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Announcement and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsda4xu6w0pquu47d0l2l9lnm33l6fx3wnxwjkr8ah4dtqs4se9paspzamhxue69uhhyetvv9ujumn0wd68ytnzv9hxgtczyp90ls2v26fztv4pcmsdp7vcjtuekag3nauwa80yjhywxlt592gqsqcyqqqqqqgz9207f"
 
 
@@ -295,14 +319,14 @@
   block: 812167
   headline: 
     de: "Winterbaden #1"
-    en: "Winterbaden #1"
+    en: "Ice bath #1"
   description: 
     de: "Wir starten die Winterbadesaison für Bitcoin Pinguine."
     en: "We start the ice-bath season for Bitcoin penguins."
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Announcement and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsywfsxedy4x35md96f3af09yk4n82c6ypruva3nu7tjyjee5d8zfsppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqpmuhywf"
 
 - type: "action"
@@ -362,8 +386,8 @@
     en: "We start a new meetup. For devs only."
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Announcement and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://snort.social/nevent1qqsvqkfxufpykagmrags2uke6p9p9x5cpayde5dyeqg24mgp9tsueusppemhxue69uhkummn9ekx7mp0qgsy4l7pf3tfyfdj58rwp58enzf0nxm4zx0h3m5auj2u3cmaws4fqzqrqsqqqqqphqrzh4"
 
 - type: "action"
@@ -405,7 +429,7 @@
     en: "Nostr"
   description: 
     de: 'Wir sind bei Nostr.'
-    en: "We are on Nostr."
+    en: "We are at Nostr."
   link: 
     label:
       de: "Ankündigung"
@@ -436,8 +460,8 @@
     en: "meetup #3"
   link:
     label: 
-      de: "Ankündigung mit Flyer"
-      en: "Ankündigung and flyer"
+      de: "Ankündigung"
+      en: "Announcement"
     url: "https://twitter.com/BTravemuende/status/1692473118709649464"
 
 
