@@ -68,5 +68,31 @@ const t = useTranslations(lang)
 
   Alpine.store('darkMode', darkModeStore)
 
+  const eventStore = {
+    _id: window.location.hash.replace('#', '') || '',
+    get id() {
+      return this._id
+    },
+    toggle(id: string) {
+      if (this.id === id) {
+        this._id = ''
+        window.history.pushState(
+          null,
+          '',
+          `${location.pathname}${location.search}`
+        )
+      } else {
+        this._id = id
+        window.history.pushState(
+          null,
+          '',
+          `${location.pathname}${location.search}#${id}`
+        )
+      }
+    }
+  }
+
+  Alpine.store('event', eventStore)
+
   Alpine.start()
 </script>

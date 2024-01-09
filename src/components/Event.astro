@@ -43,7 +43,7 @@ const t = useTranslations(lang)
     'group/w'
   )}
   id={block.toString()}
-  x-data='{ shown: false, expanded: false }'
+  x-data=`{shown: false, get expanded() {return $store.event.id == ${block}}}`
   x-intersect.once.threshold.30='shown = true'
 >
   <!-- 
@@ -112,7 +112,7 @@ const t = useTranslations(lang)
 
       <div
         class='group/h relative w-full cursor-pointer'
-        @click='expanded = !expanded'
+        @click=`$store.event.toggle(${block})`
       >
         <h1
           class={twMerge(
@@ -218,7 +218,7 @@ const t = useTranslations(lang)
     x-transition:leave='transition ease-out duration-300'
     x-transition:leave-start='opacity-100 scale-100'
     x-transition:leave-end='opacity-0 scale-50'
-    @click='expanded = !expanded'
+    @click=`$store.event.toggle(${block})`
   >
     <span x-show='!expanded' class='text-inherit'>{block}</span>
     <span x-show='expanded' class='text-inherit'>{block}</span>
