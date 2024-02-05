@@ -1,4 +1,28 @@
 - type: "meetup"
+  date: 2024-02-03T18:00:00+02:00
+  block: 828759
+  headline: 
+    de: "Meetup #8"
+    en: "meetup #8"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note12p6rwq70cldf9pqgtgufrc0n7k2kkcxg3s22my77duflreptlwes2qk50y"
+
+- type: "misc"
+  date: 2024-02-03T17:30:00+02:00
+  block: 828756
+  headline: 
+    de: "Winterbaden #4"
+    en: "Ice bath #4"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note1a8fvyck4jpzra722ehmdsm94h3gkj6xhdy8acdr7dzkwtr2vuttqu20vjq"
+
+- type: "meetup"
   date: 2024-01-06T18:00:00+02:00
   block: 824638
   headline: 
