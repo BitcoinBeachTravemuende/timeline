@@ -1,3 +1,18 @@
+- type: "tech"
+  date: 2023-02-08T10:50:00+02:00
+  block: 829502
+  headline: 
+    de: "Fees"
+    en: "Fees"
+  description:
+    de: "Bitcoin Fees als Web App. Konfigurierbar. Open-Source bei GitHub."
+    en: "Web app for estimated Bitcoin fees. Configurable. Open source at GitHub."
+  link:
+    label: 
+      de: "Link"
+      en: "Link"
+    url: "https://fees.bitcoinbeachtravemuende.de/"
+
 - type: "meetup"
   date: 2024-02-03T18:00:00+02:00
   block: 828759
