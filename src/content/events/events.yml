@@ -1,4 +1,34 @@
 - type: "tech"
+  date: 2023-02-22T16:30:00+02:00
+  block: 831547
+  headline: 
+    de: "npm Organisation"
+    en: "npm organization"
+  description:
+    de: "BBT ist eingetragen als npm Organisation. Das ermöglicht uns Open-Source als Packages allen interessierten JavaScript Entwicklern frei zur Verfügung zu stellen."
+    en: "BBT has been registered as npm organization. Now we are able to share our open source contributions as packages with the JavaScript world."
+  link:
+    label: 
+      de: "npm"
+      en: "npm"
+    url: "https://www.npmjs.com/org/bitcoinbeachtravemuende"
+
+- type: "tech"
+  date: 2023-02-20T15:00:00+02:00
+  block: 831264
+  headline: 
+    de: "<bbt-logo />"
+    en: "<bbt-logo />"
+  description:
+    de: "Animiertes Logo vom Bitcoin Beach Travemünde als Web Component. Open-Source bei GitHub."
+    en: "Animated logo of Bitcoin Beach Travemünde provided as a Web Component. Open source at GitHub."
+  link:
+    label: 
+      de: "GitHub"
+      en: "GitHub"
+    url: "https://github.com/BitcoinBeachTravemuende/bbt-logo-webcomponent"
+
+- type: "tech"
   date: 2023-02-08T10:50:00+02:00
   block: 829502
   headline: 
