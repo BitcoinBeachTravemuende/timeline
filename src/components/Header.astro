@@ -8,7 +8,7 @@ import { useTranslations } from 'src/i18n'
 import { COLORS_BG, COLORS_TEXT } from '../const'
 import Info from './icons/Info.astro'
 import Close from './icons/Close.astro'
-import Logo from './Logo.astro'
+
 
 type Props = {
   lang: Lang
@@ -75,9 +75,15 @@ const countAll = events.length
   </div>
 
   <!-- logo -->
-  <Logo
-    class='border-whitedark:border-gray-900 mt-6 scale-75 rounded-full bg-gray-50 dark:bg-gray-700 md:scale-100'
-  />
+  <div class="mt-6 scale-75 md:scale-100" >
+    <template x-if='!$store.darkMode.on'>
+      <bbt-logo />
+    </template>
+    
+    <template x-if='$store.darkMode.on'>
+      <bbt-logo fill="#27272a" stroke="white" />
+    </template>
+  </div>
 
   <!-- title -->
   <h1
@@ -166,3 +172,10 @@ const countAll = events.length
     </div>
   </div>
 </header>
+
+
+<script>
+
+import '@bitcoinbeachtravemuende/bbt-logo'
+
+</script>

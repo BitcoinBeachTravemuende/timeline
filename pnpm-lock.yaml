@@ -20,6 +20,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.0.3
     version: 5.0.3(astro@4.0.6)(tailwindcss@3.3.6)
+  '@bitcoinbeachtravemuende/bbt-logo':
+    specifier: ^0.1.0
+    version: 0.1.0
   alpinejs:
     specifier: ^3.13.3
     version: 3.13.3
@@ -456,6 +459,10 @@ packages:
       '@babel/helper-string-parser': 7.23.4
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@bitcoinbeachtravemuende/bbt-logo@0.1.0:
+    resolution: {integrity: sha512-ErDcNQ/a80WrQoIV1iUvYDh2BhfRnk/ZYNTALgn4ieMFW1Q9+9Mj8qdnfEXISmCft5rKWWgQ1SmvghaKcbIvFQ==}
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
