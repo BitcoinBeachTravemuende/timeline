@@ -21,8 +21,8 @@ dependencies:
     specifier: ^5.0.3
     version: 5.0.3(astro@4.0.6)(tailwindcss@3.3.6)
   '@bitcoinbeachtravemuende/bbt-logo':
-    specifier: ^0.2.1
-    version: 0.2.1
+    specifier: ^0.2.2
+    version: 0.2.2
   alpinejs:
     specifier: ^3.13.3
     version: 3.13.3
@@ -461,8 +461,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@bitcoinbeachtravemuende/bbt-logo@0.2.1:
-    resolution: {integrity: sha512-UD4Q/BAcE1ZXU2cea65j2CbuSp0y06+kpOmlSnpzETt3uaN2AUGFJ41NNVFGyiKOZ5rTFTWilXDyKjOsWxLrYg==}
+  /@bitcoinbeachtravemuende/bbt-logo@0.2.2:
+    resolution: {integrity: sha512-Wb2b3Ca9NTFt/Mj6fiWCj0EL4huCJg6vsHmhnNiAgoUa5F1KSF6BlLea8eZ3/QQKJHYiqNCc1wHxl/O1IY0B+A==}
+    dependencies:
+      '@bitcoinbeachtravemuende/bitcoin-logo': 0.1.0
+    dev: false
+
+  /@bitcoinbeachtravemuende/bitcoin-logo@0.1.0:
+    resolution: {integrity: sha512-qHEsNdp6KsDM4Rt+FsZ8A2cZyLtCOEODxX4OuCLs62hMQcQDbnSDGnJ7jguCb1Ilq28qkv/rMW5+1LozvsRe+g==}
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
