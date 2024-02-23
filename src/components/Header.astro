@@ -76,13 +76,10 @@ const countAll = events.length
 
   <!-- logo -->
   <div class="mt-6 scale-75 md:scale-100" >
-    <template x-if='!$store.darkMode.on'>
-      <bbt-logo />
-    </template>
-    
-    <template x-if='$store.darkMode.on'>
-      <bbt-logo fill="#27272a" stroke="white" />
-    </template>
+    <bbt-logo 
+      x-bind:fill="$store.darkMode.on ? '#27272a': 'white'" 
+      x-bind:stroke="$store.darkMode.on ? 'white': 'black'" 
+    />
   </div>
 
   <!-- title -->
