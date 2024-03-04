@@ -11,6 +11,21 @@
     url: "https://primal.net/e/note16tkdwk7dlks9h5cgxp420ea2knlu72064fd23200xq0tyhsa9kestx68qp"
 
 - type: "tech"
+  date: 2023-02-28T16:45:00+02:00
+  block: 832422
+  headline: 
+    de: "<bitcoin-logo />"
+    en: "<bitcoin-logo />"
+  description:
+    de: "Bitcoin Logo als Web Component. Open-Source bei GitHub."
+    en: "Bitcoin logo Web Component. Open source at GitHub."
+  link:
+    label: 
+      de: "GitHub"
+      en: "GitHub"
+    url: "https://github.com/BitcoinBeachTravemuende/bitcoin-logo-webcomponent"
+
+- type: "tech"
   date: 2023-02-22T16:30:00+02:00
   block: 831547
   headline: 
