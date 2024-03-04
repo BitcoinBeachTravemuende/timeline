@@ -1,3 +1,15 @@
+- type: "meetup"
+  date: 2024-03-02T18:00:00+02:00
+  block: 832845
+  headline: 
+    de: "Meetup #9"
+    en: "meetup #9"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note16tkdwk7dlks9h5cgxp420ea2knlu72064fd23200xq0tyhsa9kestx68qp"
+
 - type: "tech"
   date: 2023-02-22T16:30:00+02:00
   block: 831547
