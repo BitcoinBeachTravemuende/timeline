@@ -1,4 +1,16 @@
 - type: "meetup"
+  date: 2024-04-06T18:00:00+02:00
+  block: 837986
+  headline: 
+    de: "Meetup #10"
+    en: "meetup #10"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note1vgd7qh9xpxk4ppc8j0aezew7muldtlu8ws0yeqrje890wd3a5fmquahnh2"
+
+- type: "meetup"
   date: 2024-03-02T18:00:00+02:00
   block: 832845
   headline: 
