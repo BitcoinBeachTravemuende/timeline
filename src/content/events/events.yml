@@ -1,4 +1,28 @@
 - type: "meetup"
+  date: 2024-05-04T18:00:00+02:00
+  block: 842075
+  headline: 
+    de: "Meetup #11"
+    en: "meetup #11"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note1q52whg70ztwkn3fp03f4swwhw0mqvw8chqzwmz48epqg3m0fnphs7x60xc"
+
+- type: "misc"
+  date: 2024-05-04T15:30:00+02:00
+  block: 842057
+  headline: 
+    de: "Schiffsausflug"
+    en: "boat trip"
+  link:
+    label: 
+      de: "Ankündigung"
+      en: "Announcement"
+    url: "https://primal.net/e/note1a89ns3kmv32tyxzukm9fjh6trfghpfakgxlxf2fzd0rsqqs7luqqky9l4z"
+
+- type: "meetup"
   date: 2024-04-06T18:00:00+02:00
   block: 837986
   headline: 
