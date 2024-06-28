@@ -1,3 +1,63 @@
+- type: "tech"
+  date: 2023-06-25T18:20:00+02:00
+  block: 849454
+  headline: 
+    de: "Webseite"
+    en: "website"
+  description:
+    de: "bitcoinbeachtravemuende.de geht online."
+    en: "bitcoinbeachtravemuende.de has been launched."
+  link:
+    label: 
+      de: "bitcoinbeachtravemuende.de"
+      en: "bitcoinbeachtravemuende.de"
+    url: "https://bitcoinbeachtravemuende.de"
+
+- type: "tech"
+  date: 2023-06-23T16:00:00+02:00
+  block: 849167
+  headline: 
+    de: "BIP-39 Web App"
+    en: "BIP-39 web app"
+  description:
+    de: "BIP-39 Wörterliste in 10 Sprachen. Zum Filtern und Suchen nach Wörtern und Wortpositionen."
+    en: "BIP-39 word list in 10 languages. Filter words or search for word positions."
+  link:
+    label: 
+      de: "GitHub"
+      en: "GitHub"
+    url: "https://github.com/BitcoinBeachTravemuende/bip39-word-list"
+
+- type: "meetup"
+  date: 2024-06-08T18:00:00+02:00
+  block: 847068
+  headline: 
+    de: "Meetup #12 + mx12art"
+    en: "meetup #12 + mx12art"
+  description:
+    de: "Meetup mit Bitcoin Kunstausstellung von @mx12art"
+    en: "Meetup and Bitcoin art by @mx12art"
+  link:
+    label: 
+      de: "Nostr"
+      en: "Nostr"
+    url: "https://primal.net/e/note1lsl6uknv6phepqd9gmzv66mmc3fzqt907vznu9keha8jfxx9g94q9jt4p8"
+
+- type: "tech"
+  date: 2023-05-30T13:12:00+02:00
+  block: 845777
+  headline: 
+    de: "Bitaxe BBT-Edition"
+    en: "Bitaxe BBT edition"
+  description:
+    de: "Bitaxe BBT Edition hat den Bitcoin Beach Travemünde erreicht."
+    en: "Bitaxe BBT edition has been landed at Bitcoin Beach Travemünde."
+  link:
+    label: 
+      de: "Nostr"
+      en: "Nostr"
+    url: "https://primal.net/e/note1d24jqhajkw9lgn3d2s7h7rp6c9lkz0259q94nvye3464g92cf84qkxpx5c"
+
 - type: "meetup"
   date: 2024-05-04T18:00:00+02:00
   block: 842075
@@ -21,6 +81,21 @@
       de: "Ankündigung"
       en: "Announcement"
     url: "https://primal.net/e/note1a89ns3kmv32tyxzukm9fjh6trfghpfakgxlxf2fzd0rsqqs7luqqky9l4z"
+
+- type: "misc"
+  date: 2023-04-25T15:36:00+02:00
+  block: 839340
+  headline: 
+    de: "Nakamoto Stitch"
+    en: "Nakamoto Stitch"
+  description:
+    de: "Nakamoto Stitch erstellt einmalige Patches für Bitcoin Beach Travemünde."
+    en: "Nakamoto Stitch made some special patches for Bitcoin Beach Travemünde."
+  link:
+    label: 
+      de: "Twitter"
+      en: "Twitter"
+    url: "https://x.com/Danny_Nakamoto/status/1783490374922600703"
 
 - type: "meetup"
   date: 2024-04-06T18:00:00+02:00
