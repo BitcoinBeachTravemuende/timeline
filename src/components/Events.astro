@@ -15,7 +15,7 @@ const t = useTranslations(lang)
 
 <div class='w-full'>
   <h2
-    class='text-md mb-8 w-[10%] xl:w-auto text-center font-semibold uppercase text-gray-300 dark:text-gray-500 md:mb-12 md:text-xl'
+    class='text-md mb-8 w-[10%] text-center font-semibold uppercase text-gray-300 dark:text-gray-500 md:mb-12 md:text-xl xl:w-auto'
   >
     {t('theBeginning')}
   </h2>
@@ -23,7 +23,7 @@ const t = useTranslations(lang)
     {events.map((event) => <Event lang={lang} event={event} />)}
   </div>
   <p
-    class='text-md mt-8 w-[10%] xl:w-auto text-center font-semibold uppercase text-gray-300 dark:text-gray-500 md:mt-16 md:text-xl'
+    class='text-md mt-8 w-[10%] text-center font-semibold uppercase text-gray-300 dark:text-gray-500 md:mt-16 md:text-xl xl:w-auto'
   >
     {t('theEnd')}
   </p>

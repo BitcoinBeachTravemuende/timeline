@@ -6,9 +6,8 @@ import Dark from './icons/DarkMode.astro'
 import { twMerge } from 'tailwind-merge'
 import { useTranslations } from 'src/i18n'
 import { COLORS_BG, COLORS_TEXT } from '../const'
-import Info from './icons/Info.astro'
 import Close from './icons/Close.astro'
-
+import Arrow from './icons/Arrow.astro'
 
 type Props = {
   lang: Lang
@@ -40,14 +39,14 @@ const countAll = events.length
 <header
   class='ease mb-20 flex w-full flex-col items-center bg-gray-50 px-6 pb-16 pt-3 dark:bg-gray-800'
 >
-  <div class='container mx-auto flex items-center justify-end'>
-    <ul class='flex items-center'>
+  <div class='container mx-auto flex items-center'>
+    <ul class='flex flex-1 items-center'>
       {
         LANGUAGES.map((l) => (
           <li class='uppercase md:first-of-type:mr-1'>
             <a
               class={twMerge(
-                'ease p-1 text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 md:text-lg',
+                'ease p-1 text-sm text-gray-500 hover:scale-105 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 md:text-lg',
                 lang === l ? 'font-bold' : 'font-normal'
               )}
               href={l === 'de' ? '/' : `/${l}`}
@@ -65,21 +64,20 @@ const countAll = events.length
     >
       <template x-if='$store.darkMode.on'>
         <!-- https://api.iconify.design/material-symbols:sunny-rounded.svg -->
-        <Light class='h-6 w-6' />
+        <Light class='ease h-6 w-6 hover:rotate-90 hover:scale-105' />
       </template>
       <!-- https://api.iconify.design/material-symbols-light:dark-mode-rounded.svg -->
       <template x-if='!$store.darkMode.on'>
-        <Dark class='h-6 w-6' />
+        <Dark class='ease h-6 w-6 hover:scale-105' />
       </template>
     </button>
   </div>
 
   <!-- logo -->
-  <div class="mt-6 scale-75 md:scale-100" >
-    <bbt-logo 
-      x-bind:fill="$store.darkMode.on ? '#27272a': 'white'" 
-      x-bind:stroke="$store.darkMode.on ? 'white': 'black'" 
-    />
+  <div class='mt-6 scale-75 md:scale-100'>
+    <bbt-logo
+      x-bind:fill="$store.darkMode.on ? '#27272a': 'white'"
+      x-bind:stroke="$store.darkMode.on ? 'white': 'black'"></bbt-logo>
   </div>
 
   <!-- title -->
@@ -96,25 +94,27 @@ const countAll = events.length
 
   <!-- entries -->
   <div
-    class='group/h ease mt-12 flex cursor-pointer flex-col items-center text-gray-400 hover:text-gray-500 dark:text-gray-400'
+    class='group/h ease mt-12 flex flex-col items-center text-gray-400 hover:text-gray-500 dark:text-gray-400'
     x-data='{ expanded: false }'
-    @click='expanded = !expanded'
   >
     <h3
-      class='relative inline-block rounded-full py-2 pl-8 pr-10 text-base font-semibold uppercase md:text-xl'
-      :class="{ 'bg-white dark:bg-gray-900': expanded, 'bg-gray-100 hover:bg-white dark:bg-gray-700 dark:hover:bg-gray-900': !expanded }"
+      class='ease relative inline-block cursor-pointer rounded-full py-2 pl-8 pr-10 text-base font-semibold uppercase md:pr-12 md:text-xl'
+      :class="{ 'bg-white dark:bg-gray-900': expanded, 'bg-gray-100 hover:bg-white dark:bg-gray-700 dark:hover:bg-gray-900 group-hover/h:scale-105': !expanded }"
+      @click='expanded = !expanded'
     >
       {countAll}
       {t('entries')}
-      <Info
+      <Arrow
         class={twMerge(
           'absolute top-1/2 -translate-y-1/2',
-          'w-5 h-5',
-          'right-3',
+          'w-7 h-7 md:w-8 md:h-8',
+          'right-2',
+          'group-hover/h:top-2',
           'ease',
+          'group-hover/h:animate-bounce',
           'text-inherit'
         )}
-        :class="{ 'rotate-180': expanded }"
+        :class="{ 'rotate-180 ': expanded }"
         x-show='!expanded'
       />
       <Close
@@ -126,6 +126,7 @@ const countAll = events.length
           'text-inherit',
           'group-hover/h:rotate-90 ease'
         )}
+        :class="{ 'rotate-180': expanded }"
         x-show='expanded'
       />
     </h3>
@@ -170,9 +171,6 @@ const countAll = events.length
   </div>
 </header>
 
-
 <script>
-
-import '@bitcoinbeachtravemuende/bbt-logo'
-
+  import '@bitcoinbeachtravemuende/bbt-logo'
 </script>

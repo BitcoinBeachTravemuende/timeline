@@ -155,7 +155,7 @@ const t = useTranslations(lang)
             href=`https://mempool.space/block/${block}`
             class='flex items-center text-gray-400 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100'
           >
-            {block}<External class='ml-1 h-3 w-3 text-inherit' />
+            {block}<External class='ml-1 h-4 w-4 text-inherit' />
           </a>
           <span class='mx-2 hidden text-inherit md:block'>|</span>
           <p
@@ -181,7 +181,9 @@ const t = useTranslations(lang)
           class='group mr-1 mt-4 flex items-center text-sm font-semibold text-gray-500 underline hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100 md:text-base'
           href={link.url}
         >
-          {link.label[lang]}<External class='ml-1 text-inherit' />
+          {link.label[lang]}<External
+            class='ml-1 h-4 w-4 text-inherit md:h-5 md:w-5'
+          />
         </a>
       </div>
     </div>
