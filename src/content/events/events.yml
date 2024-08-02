@@ -1,3 +1,18 @@
+- type: "meetup"
+  date: 2024-07-07T18:00:00+02:00
+  block: 851113
+  headline: 
+    de: "Meetup #13"
+    en: "meetup #13"
+  description:
+    de: "1 Jahr Bitcoin Beach Travemünde Jubiläums-Meetup."
+    en: "1st anniversary meetup at Bitcoin Beach Travemünde."
+  link:
+    label: 
+      de: "Nostr"
+      en: "Nostr"
+    url: "https://primal.net/e/note12qkk37ejna7zx3d3u9l4qe8050hhh99z5trlqy9emr3syd8tvuyscp22ea"
+
 - type: "tech"
   date: 2023-06-25T18:20:00+02:00
   block: 849454
