@@ -17,10 +17,12 @@ const event = z.object({
   block: z.number(),
   headline: translations,
   description: oTranslations,
-  link: z.object({
-    label: translations,
-    url: z.string().url()
-  })
+  link: z
+    .object({
+      label: translations,
+      url: z.string().url()
+    })
+    .optional()
 })
 
 export type Event = z.infer<typeof event>

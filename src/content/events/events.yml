@@ -1,4 +1,35 @@
 - type: "meetup"
+  date: 2024-10-05T18:00:00+02:00
+  block: 864310
+  headline: 
+    de: "Meetup #16"
+    en: "meetup #16"
+
+- type: "meetup"
+  date: 2024-09-07T18:00:00+02:00
+  block: 860320
+  headline: 
+    de: "Meetup #15"
+    en: "meetup #15"
+  link:
+    label: 
+      de: "X (Twitter)"
+      en: "X (Twitter)"
+    url: "https://x.com/DerBitcoinVirus/status/1823407119728624053"
+
+- type: "meetup"
+  date: 2024-08-03T18:00:00+02:00
+  block: 855226
+  headline: 
+    de: "Meetup #14"
+    en: "meetup #14"
+  link:
+    label: 
+      de: "X (Twitter)"
+      en: "X (Twitter)"
+    url: "https://x.com/BTravemuende/status/1810232067344543999"
+
+- type: "meetup"
   date: 2024-07-07T18:00:00+02:00
   block: 851113
   headline: 

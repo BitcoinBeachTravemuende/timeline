@@ -177,14 +177,17 @@ const t = useTranslations(lang)
             </p>
           )
         }
-        <a
-          class='group mr-1 mt-4 flex items-center text-sm font-semibold text-gray-500 underline hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100 md:text-base'
-          href={link.url}
-        >
-          {link.label[lang]}<External
-            class='ml-1 h-4 w-4 text-inherit md:h-5 md:w-5'
-          />
-        </a>
+        {
+          !!link && (
+            <a
+              class='group mr-1 mt-4 flex items-center text-sm font-semibold text-gray-500 underline hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100 md:text-base'
+              href={link.url}
+            >
+              {link.label[lang]}
+              <External class='ml-1 h-4 w-4 text-inherit md:h-5 md:w-5' />
+            </a>
+          )
+        }
       </div>
     </div>
   </div>
