@@ -45,7 +45,7 @@
     url: "https://primal.net/e/note12qkk37ejna7zx3d3u9l4qe8050hhh99z5trlqy9emr3syd8tvuyscp22ea"
 
 - type: "tech"
-  date: 2023-06-25T18:20:00+02:00
+  date: 2024-06-25T18:20:00+02:00
   block: 849454
   headline: 
     de: "Webseite"
@@ -60,7 +60,7 @@
     url: "https://bitcoinbeachtravemuende.de"
 
 - type: "tech"
-  date: 2023-06-23T16:00:00+02:00
+  date: 2024-06-23T16:00:00+02:00
   block: 849167
   headline: 
     de: "BIP-39 Web App"
@@ -90,7 +90,7 @@
     url: "https://primal.net/e/note1lsl6uknv6phepqd9gmzv66mmc3fzqt907vznu9keha8jfxx9g94q9jt4p8"
 
 - type: "tech"
-  date: 2023-05-30T13:12:00+02:00
+  date: 2024-05-30T13:12:00+02:00
   block: 845777
   headline: 
     de: "Bitaxe BBT-Edition"
@@ -129,7 +129,7 @@
     url: "https://primal.net/e/note1a89ns3kmv32tyxzukm9fjh6trfghpfakgxlxf2fzd0rsqqs7luqqky9l4z"
 
 - type: "misc"
-  date: 2023-04-25T15:36:00+02:00
+  date: 2024-04-25T15:36:00+02:00
   block: 839340
   headline: 
     de: "Nakamoto Stitch"
@@ -168,7 +168,7 @@
     url: "https://primal.net/e/note16tkdwk7dlks9h5cgxp420ea2knlu72064fd23200xq0tyhsa9kestx68qp"
 
 - type: "tech"
-  date: 2023-02-28T16:45:00+02:00
+  date: 2024-02-28T16:45:00+02:00
   block: 832422
   headline: 
     de: "<bitcoin-logo />"
@@ -183,7 +183,7 @@
     url: "https://github.com/BitcoinBeachTravemuende/bitcoin-logo-webcomponent"
 
 - type: "tech"
-  date: 2023-02-22T16:30:00+02:00
+  date: 2024-02-22T16:30:00+02:00
   block: 831547
   headline: 
     de: "npm Organisation"
@@ -198,7 +198,7 @@
     url: "https://www.npmjs.com/org/bitcoinbeachtravemuende"
 
 - type: "tech"
-  date: 2023-02-20T15:00:00+02:00
+  date: 2024-02-20T15:00:00+02:00
   block: 831264
   headline: 
     de: "<bbt-logo />"
@@ -213,7 +213,7 @@
     url: "https://github.com/BitcoinBeachTravemuende/bbt-logo-webcomponent"
 
 - type: "tech"
-  date: 2023-02-08T10:50:00+02:00
+  date: 2024-02-08T10:50:00+02:00
   block: 829502
   headline: 
     de: "Fees"
